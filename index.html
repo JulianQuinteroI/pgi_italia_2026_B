@@ -6,10 +6,6 @@
 <title>PGI 2026 — Ruta 11: República Italiana | CEM</title>
 <meta name="description" content="Práctica Geoestratégica Internacional 2026 — Ruta 11: República Italiana. 38 oficiales del CEM recorren Roma, Milán, Venecia, Pisa, Livorno y Florencia del 10 al 21 de Mayo.">
 <meta name="theme-color" content="#0B0E17">
-<meta property="og:title" content="PGI 2026 — Ruta 11: República Italiana">
-<meta property="og:description" content="Práctica Geoestratégica Internacional de la Escuela Superior de Guerra — 12 días por 6 ciudades italianas.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200&q=80">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -22,14 +18,12 @@
 html{scroll-behavior:smooth;}
 body{background:var(--dark);color:var(--white);font-family:'Inter',sans-serif;overflow-x:hidden;}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:999;opacity:0.4;}
-/* NAV */
 nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(11,14,23,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,0.2);padding:14px 40px;display:flex;align-items:center;justify-content:space-between;}
 .nav-brand{font-family:'Bebas Neue',sans-serif;font-size:1.4rem;color:var(--gold);letter-spacing:3px;}
 .nav-brand span{color:var(--white);}
 .nav-links{display:flex;gap:28px;list-style:none;}
 .nav-links a{font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--text);text-decoration:none;transition:color 0.3s;}
 .nav-links a:hover{color:var(--gold);}
-/* HERO */
 .hero{min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;}
 .hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(11,14,23,0.82) 0%,rgba(13,27,62,0.68) 50%,rgba(11,14,23,0.88) 100%);}
 .hero-bg::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1800&q=70') center/cover no-repeat;z-index:-1;animation:slowZoom 22s ease-in-out infinite alternate;}
@@ -52,7 +46,6 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(11,14,23,0.92);b
 .hero-scroll{position:absolute;bottom:38px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--text);font-size:0.58rem;letter-spacing:3px;text-transform:uppercase;animation:bounce 2s ease-in-out infinite;}
 .hero-scroll::after{content:'';width:1px;height:38px;background:linear-gradient(to bottom,var(--gold),transparent);}
 @keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0);}50%{transform:translateX(-50%) translateY(8px);}}
-/* ROUTE BAND */
 .route-band{background:var(--blue-deep);border-top:1px solid rgba(201,168,76,0.3);border-bottom:1px solid rgba(201,168,76,0.3);padding:44px 40px;}
 .route-cities{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;max-width:1200px;margin:0 auto;}
 .route-city{display:flex;align-items:center;gap:14px;}
@@ -60,19 +53,18 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(11,14,23,0.92);b
 .route-city-name{font-family:'Bebas Neue',sans-serif;font-size:1.35rem;letter-spacing:3px;color:var(--white);}
 .route-city-dates{font-size:0.58rem;letter-spacing:2px;color:var(--gold);text-transform:uppercase;}
 .route-arrow{color:var(--gold);font-size:1.1rem;margin:0 14px;opacity:0.55;}
-/* SECTIONS */
 section{padding:90px 40px;max-width:1400px;margin:0 auto;}
 .section-label{font-size:0.63rem;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:500;}
 .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,3.2rem);font-weight:300;color:var(--white);line-height:1.1;margin-bottom:44px;}
 .section-title em{font-style:italic;color:var(--gold);}
 .divider{width:55px;height:2px;background:var(--gold);margin:14px 0 38px;}
 /* CAROUSEL */
-.carousel{position:relative;width:100%;overflow:hidden;border-radius:0;background:#040810;}
+.carousel{position:relative;width:100%;overflow:hidden;background:#040810;}
 .ctrack{display:flex;transition:transform 0.65s cubic-bezier(0.4,0,0.2,1);will-change:transform;}
 .cslide{flex:0 0 100%;width:100%;}
 .cslide img{width:100%;height:480px;object-fit:cover;display:block;}
 .cdots{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:5;}
-.cdot{width:6px;height:6px;border-radius:50%;background:rgba(201,168,76,0.35);cursor:pointer;transition:all 0.3s;}
+.cdot{width:6px;height:6px;border-radius:50%;background:rgba(201,168,76,0.35);cursor:pointer;transition:all 0.3s;border:none;padding:0;}
 .cdot.active{background:var(--gold);transform:scale(1.3);}
 .carr{position:absolute;top:50%;transform:translateY(-50%);background:rgba(11,14,23,0.7);border:1px solid rgba(201,168,76,0.3);color:var(--gold);font-size:1.8rem;line-height:1;padding:10px 14px;cursor:pointer;z-index:5;transition:all 0.3s;backdrop-filter:blur(6px);}
 .carr:hover{background:rgba(201,168,76,0.15);border-color:var(--gold);}
@@ -152,13 +144,11 @@ section{padding:90px 40px;max-width:1400px;margin:0 auto;}
 .stat-box:hover{background:rgba(201,168,76,0.05);}
 .stat-num{font-family:'Bebas Neue',sans-serif;font-size:3.8rem;color:var(--gold);line-height:1;margin-bottom:6px;}
 .stat-label{font-size:0.58rem;letter-spacing:3px;text-transform:uppercase;color:var(--text);}
-/* TRANSPORT & LAUNDRY */
 .city-services{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px;}
 .service-block{background:rgba(201,168,76,0.04);border:1px solid rgba(201,168,76,0.12);padding:14px 16px;border-radius:4px;}
 .service-block h5{font-size:0.56rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:flex;align-items:center;gap:6px;}
 .service-block ul{list-style:none;display:flex;flex-direction:column;gap:5px;}
 .service-block li{font-size:0.76rem;color:var(--text);line-height:1.5;display:flex;align-items:flex-start;gap:6px;}
-/* HISTORY BADGE */
 .city-history{background:rgba(22,38,85,0.3);border-left:2px solid #7BA7E8;padding:12px 16px;margin-bottom:18px;border-radius:0 4px 4px 0;}
 .city-history h5{font-size:0.56rem;letter-spacing:3px;text-transform:uppercase;color:#7BA7E8;margin-bottom:5px;}
 .city-history p{font-size:0.78rem;color:var(--text);line-height:1.65;font-style:italic;}
@@ -182,39 +172,28 @@ section{padding:90px 40px;max-width:1400px;margin:0 auto;}
 .security-tips-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;}
 .security-tip{display:flex;align-items:flex-start;gap:10px;font-size:0.82rem;color:var(--text);line-height:1.6;background:rgba(201,168,76,0.04);padding:12px 14px;border-left:2px solid var(--gold);}
 .security-tip-icon{font-size:1.2rem;flex-shrink:0;}
-/* ITINERARY HISTORY */
-.itinerary-history{font-size:0.74rem;color:rgba(123,167,232,0.85);font-style:italic;margin-top:6px;padding-left:2px;line-height:1.5;border-left:2px solid rgba(123,167,232,0.3);padding:4px 0 4px 10px;}
-/* FOOTER */
+.itinerary-history{font-size:0.74rem;color:rgba(123,167,232,0.85);font-style:italic;margin-top:6px;line-height:1.5;border-left:2px solid rgba(123,167,232,0.3);padding:4px 0 4px 10px;}
 footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:56px 40px;text-align:center;}
 .footer-logo{font-family:'Bebas Neue',sans-serif;font-size:1.9rem;letter-spacing:5px;color:var(--gold);margin-bottom:14px;}
 .footer-text{font-size:0.72rem;color:var(--text);letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;}
 .footer-divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:20px 0;}
 .footer-divider-line{width:70px;height:1px;background:rgba(201,168,76,0.3);}
 .footer-divider-diamond{width:5px;height:5px;background:var(--gold);transform:rotate(45deg);}
-/* FADE IN */
 .fade-in{opacity:0;transform:translateY(28px);transition:opacity 0.75s ease,transform 0.75s ease;}
 .fade-in.visible{opacity:1;transform:translateY(0);}
-/* RESPONSIVE */
-/* HAMBURGER MENU */
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px;z-index:110;}
 .hamburger span{display:block;width:24px;height:2px;background:var(--gold);margin:5px 0;transition:all 0.35s cubic-bezier(0.4,0,0.2,1);border-radius:1px;}
 .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px);}
 .hamburger.active span:nth-child(2){opacity:0;transform:translateX(-10px);}
 .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px);}
-/* COUNTDOWN */
 .countdown{display:flex;justify-content:center;gap:28px;margin-top:36px;flex-wrap:wrap;}
 .cd-block{text-align:center;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.2);padding:14px 20px;min-width:80px;backdrop-filter:blur(6px);}
 .cd-num{font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:var(--gold);line-height:1;}
 .cd-label{font-size:0.52rem;letter-spacing:3px;text-transform:uppercase;color:var(--text);margin-top:4px;}
-/* ROUTE MAP */
 .route-map-section{padding:60px 40px;max-width:1100px;margin:0 auto;text-align:center;}
 .route-map-container{position:relative;max-width:600px;margin:0 auto;}
-@keyframes pulseGlow{0%,100%{r:18;opacity:0.5;}50%{r:22;opacity:0.8;}}
-@keyframes fadeInMap{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
 .route-map-container svg{width:100%;height:auto;animation:fadeInMap 1s ease forwards;}
-/* PARALLAX */
-.hero-bg::before{transition:transform 0.1s linear;}
-/* RESPONSIVE */
+@keyframes fadeInMap{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
 @media(max-width:900px){
   nav{padding:12px 18px;}
   .hamburger{display:block;}
@@ -241,7 +220,6 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-brand">PGI <span>2026</span></div>
   <ul class="nav-links">
@@ -252,16 +230,13 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
     <li><a href="#logistica">Logística</a></li>
     <li><a href="#equipo">Equipo</a></li>
   </ul>
-  <button class="hamburger" id="menuToggle" aria-label="Abrir menú de navegación"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="menuToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <div class="hero-flag">
-      <div class="flag-bar"></div><div class="flag-bar"></div><div class="flag-bar"></div>
-    </div>
+    <div class="hero-flag"><div class="flag-bar"></div><div class="flag-bar"></div><div class="flag-bar"></div></div>
     <p class="hero-tag">Fuerzas Militares de Colombia — CEM — Ruta 11</p>
     <h1 class="hero-title">Práctica<br><em>Geoestratégica</em><br>Internacional</h1>
     <p class="hero-subtitle">República Italiana · 2026</p>
@@ -281,7 +256,6 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
   <div class="hero-scroll">Descubrir</div>
 </div>
 
-<!-- ROUTE BAND -->
 <div class="route-band">
   <div class="route-cities">
     <div class="route-city"><div class="route-city-dot"></div><div><div class="route-city-name">Roma</div><div class="route-city-dates">10–13 Mayo</div></div></div>
@@ -304,9 +278,7 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
   <h2 class="section-title">Mapa de la <em>Misión</em></h2>
   <div class="divider" style="margin:14px auto 38px;"></div>
   <div class="route-map-container">
-    <svg viewBox="0 0 600 750" xmlns="http://www.w3.org/2000/svg" role="img">
-      <title>Mapa de Ruta PGI 2026 — Italia</title>
-      <desc>Mapa de Italia mostrando la ruta Roma, Milán, Venecia, Pisa, Livorno, Florencia</desc>
+    <svg viewBox="0 0 600 750" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
         <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#C9A84C" opacity="0.7"/></marker>
@@ -314,210 +286,54 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
         <radialGradient id="dotGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#C9A84C" stop-opacity="0.5"/><stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/></radialGradient>
         <linearGradient id="seaGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#0D1B3E" stop-opacity="0.3"/><stop offset="100%" stop-color="#0B0E17" stop-opacity="0"/></linearGradient>
       </defs>
-
-      <!-- Background -->
       <rect width="600" height="750" fill="transparent"/>
-
-      <!-- Subtle sea -->
       <rect width="600" height="750" fill="url(#seaGrad)" rx="8" opacity="0.4"/>
-
-      <!-- Sea labels -->
       <text x="82" y="310" fill="#162655" font-family="Inter,sans-serif" font-size="9" letter-spacing="6" opacity="0.6" transform="rotate(-20,82,310)">MAR TIRRENO</text>
       <text x="430" y="420" fill="#162655" font-family="Inter,sans-serif" font-size="9" letter-spacing="6" opacity="0.6" transform="rotate(15,430,420)">MAR ADRIÁTICO</text>
       <text x="180" y="700" fill="#162655" font-family="Inter,sans-serif" font-size="9" letter-spacing="6" opacity="0.45">MAR MEDITERRÁNEO</text>
-      <text x="410" y="200" fill="#162655" font-family="Inter,sans-serif" font-size="8" letter-spacing="4" opacity="0.4" transform="rotate(-5,410,200)">GOLFO DE VENECIA</text>
-
-      <!-- ═══ ITALY MAINLAND ═══ -->
-      <!-- Northern border (Alps) -->
-      <path d="M170,95 C185,80 205,68 228,60 C250,54 272,52 290,48 C310,45 330,48 348,55
-               C365,62 378,72 388,85 C395,95 400,108 402,120"
-            fill="none" stroke="rgba(201,168,76,0.18)" stroke-width="1" stroke-dasharray="3,4" opacity="0.6"/>
+      <path d="M170,95 C185,80 205,68 228,60 C250,54 272,52 290,48 C310,45 330,48 348,55 C365,62 378,72 388,85 C395,95 400,108 402,120" fill="none" stroke="rgba(201,168,76,0.18)" stroke-width="1" stroke-dasharray="3,4" opacity="0.6"/>
       <text x="285" y="42" fill="rgba(201,168,76,0.2)" font-family="Inter,sans-serif" font-size="7" text-anchor="middle" letter-spacing="8">ALPES</text>
-
-      <!-- Main Italy shape -->
-      <path d="M170,95 C178,88 190,80 205,74 C220,68 240,60 260,56 C280,52 300,50 318,52
-               C336,55 352,62 365,72 C378,82 388,95 394,110 C398,122 400,135 398,148
-               C395,160 388,168 380,175 C372,182 368,190 370,200
-               C372,210 378,218 385,224 C392,230 398,238 400,248
-               C402,260 400,272 394,282 C388,292 380,300 374,308
-               C368,316 364,326 362,336 C360,346 362,356 367,364
-               C372,372 380,378 385,386 C390,394 392,404 388,412
-               C384,420 376,425 370,432 C364,440 360,448 356,456
-               C350,465 342,472 332,476 C322,480 312,476 305,470
-               C298,464 293,458 288,452 C280,444 270,438 260,442
-               C250,448 244,458 238,466 C232,474 222,478 212,474
-               C202,470 198,460 194,450 C190,442 186,434 182,426
-               C176,416 168,410 162,402 C156,394 158,384 162,374
-               C166,364 172,354 174,346 C176,338 172,330 164,324
-               C156,318 148,314 140,306 C132,298 128,288 124,278
-               C120,268 114,260 110,252 C106,244 108,236 114,228
-               C120,220 128,214 136,208 C144,202 150,194 156,184
-               C162,174 165,162 168,150 C170,140 172,128 172,116
-               C172,106 171,98 170,95 Z"
-            fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.28)" stroke-width="2" stroke-linejoin="round"/>
-
-      <!-- Adriatic coast detail -->
-      <path d="M394,110 C400,130 402,148 398,165 C395,178 390,188 386,198
-               C382,208 385,220 392,232 C398,242 402,255 400,270
-               C398,285 390,298 382,308 C375,318 370,330 368,342"
-            fill="none" stroke="rgba(201,168,76,0.15)" stroke-width="1"/>
-
-      <!-- Sicily -->
-      <path d="M230,555 C250,542 278,535 305,540 C325,545 340,555 342,568 C342,580 330,590 312,594 C290,598 265,595 248,585 C235,577 228,566 230,555 Z"
-            fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.2)" stroke-width="1.5"/>
+      <path d="M170,95 C178,88 190,80 205,74 C220,68 240,60 260,56 C280,52 300,50 318,52 C336,55 352,62 365,72 C378,82 388,95 394,110 C398,122 400,135 398,148 C395,160 388,168 380,175 C372,182 368,190 370,200 C372,210 378,218 385,224 C392,230 398,238 400,248 C402,260 400,272 394,282 C388,292 380,300 374,308 C368,316 364,326 362,336 C360,346 362,356 367,364 C372,372 380,378 385,386 C390,394 392,404 388,412 C384,420 376,425 370,432 C364,440 360,448 356,456 C350,465 342,472 332,476 C322,480 312,476 305,470 C298,464 293,458 288,452 C280,444 270,438 260,442 C250,448 244,458 238,466 C232,474 222,478 212,474 C202,470 198,460 194,450 C190,442 186,434 182,426 C176,416 168,410 162,402 C156,394 158,384 162,374 C166,364 172,354 174,346 C176,338 172,330 164,324 C156,318 148,314 140,306 C132,298 128,288 124,278 C120,268 114,260 110,252 C106,244 108,236 114,228 C120,220 128,214 136,208 C144,202 150,194 156,184 C162,174 165,162 168,150 C170,140 172,128 172,116 C172,106 171,98 170,95 Z" fill="rgba(201,168,76,0.06)" stroke="rgba(201,168,76,0.28)" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M230,555 C250,542 278,535 305,540 C325,545 340,555 342,568 C342,580 330,590 312,594 C290,598 265,595 248,585 C235,577 228,566 230,555 Z" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.2)" stroke-width="1.5"/>
       <text x="285" y="572" fill="rgba(201,168,76,0.3)" font-family="'Bebas Neue',sans-serif" font-size="11" text-anchor="middle" letter-spacing="5">SICILIA</text>
-
-      <!-- Sardinia -->
-      <path d="M108,320 C118,302 136,292 150,298 C160,305 164,320 160,338 C155,356 142,368 128,370 C115,372 106,360 104,345 C102,335 104,328 108,320 Z"
-            fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.2)" stroke-width="1.5"/>
+      <path d="M108,320 C118,302 136,292 150,298 C160,305 164,320 160,338 C155,356 142,368 128,370 C115,372 106,360 104,345 C102,335 104,328 108,320 Z" fill="rgba(201,168,76,0.05)" stroke="rgba(201,168,76,0.2)" stroke-width="1.5"/>
       <text x="132" y="340" fill="rgba(201,168,76,0.3)" font-family="'Bebas Neue',sans-serif" font-size="9" text-anchor="middle" letter-spacing="4">CERDEÑA</text>
-
-      <!-- ═══ ROUTE LINES (animated dashes) ═══ -->
-      <!-- 1. Roma → Milán -->
-      <line x1="310" y1="385" x2="268" y2="145" stroke="url(#routeGrad)" stroke-width="2.5" stroke-dasharray="800" stroke-dashoffset="800" opacity="0.65" marker-end="url(#arrowhead)">
-        <animate attributeName="stroke-dashoffset" from="800" to="0" dur="1.8s" fill="freeze" begin="0.5s"/>
-      </line>
-      <!-- 2. Milán → Venecia -->
-      <line x1="268" y1="145" x2="378" y2="155" stroke="url(#routeGrad)" stroke-width="2.5" stroke-dasharray="400" stroke-dashoffset="400" opacity="0.65" marker-end="url(#arrowhead)">
-        <animate attributeName="stroke-dashoffset" from="400" to="0" dur="1s" fill="freeze" begin="2s"/>
-      </line>
-      <!-- 3. Venecia → Pisa -->
-      <line x1="378" y1="155" x2="240" y2="262" stroke="url(#routeGrad)" stroke-width="2.5" stroke-dasharray="500" stroke-dashoffset="500" opacity="0.65" marker-end="url(#arrowhead)">
-        <animate attributeName="stroke-dashoffset" from="500" to="0" dur="1.2s" fill="freeze" begin="2.8s"/>
-      </line>
-      <!-- 4. Pisa → Livorno -->
-      <line x1="240" y1="262" x2="222" y2="284" stroke="url(#routeGrad)" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="100" opacity="0.65" marker-end="url(#arrowhead)">
-        <animate attributeName="stroke-dashoffset" from="100" to="0" dur="0.5s" fill="freeze" begin="3.8s"/>
-      </line>
-      <!-- 5. Livorno → Florencia -->
-      <line x1="222" y1="284" x2="285" y2="240" stroke="url(#routeGrad)" stroke-width="2.5" stroke-dasharray="200" stroke-dashoffset="200" opacity="0.65" marker-end="url(#arrowhead)">
-        <animate attributeName="stroke-dashoffset" from="200" to="0" dur="0.7s" fill="freeze" begin="4.1s"/>
-      </line>
-
-      <!-- ═══ CITY 1: ROMA ═══ -->
-      <circle cx="310" cy="385" r="20" fill="url(#dotGlow)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="0.2s"/>
-        <animate attributeName="r" values="20;25;20" dur="3.5s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="310" cy="385" r="8" fill="#C9A84C" stroke="#0B0E17" stroke-width="2.5" opacity="0" filter="url(#glow)">
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="0.2s"/>
-      </circle>
-      <rect x="295" y="367" width="30" height="14" rx="3" fill="rgba(206,43,55,0.25)" stroke="rgba(206,43,55,0.6)" stroke-width="0.8" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="0.4s"/>
-      </rect>
-      <text x="310" y="377" fill="#FF8A8A" font-family="'Bebas Neue',sans-serif" font-size="10" text-anchor="middle" letter-spacing="1" opacity="0">01
-        <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="0.4s"/>
-      </text>
-      <text x="310" y="412" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="18" text-anchor="middle" letter-spacing="4" opacity="0">ROMA
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="0.4s"/>
-      </text>
-      <text x="310" y="425" fill="#C9A84C" font-family="Inter,sans-serif" font-size="8.5" text-anchor="middle" letter-spacing="1" opacity="0">10–13 Mayo · 3 noches
-        <animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="0.5s"/>
-      </text>
-
-      <!-- ═══ CITY 2: MILÁN ═══ -->
-      <circle cx="268" cy="145" r="18" fill="url(#dotGlow)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="1.8s"/>
-        <animate attributeName="r" values="18;22;18" dur="3.5s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="268" cy="145" r="7" fill="#C9A84C" stroke="#0B0E17" stroke-width="2.5" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="1.8s"/>
-      </circle>
-      <rect x="232" y="116" width="30" height="14" rx="3" fill="rgba(206,43,55,0.25)" stroke="rgba(206,43,55,0.6)" stroke-width="0.8" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="2s"/>
-      </rect>
-      <text x="247" y="126" fill="#FF8A8A" font-family="'Bebas Neue',sans-serif" font-size="10" text-anchor="middle" letter-spacing="1" opacity="0">02
-        <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="2s"/>
-      </text>
-      <text x="240" y="112" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="16" text-anchor="end" letter-spacing="3" opacity="0">MILÁN
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="2s"/>
-      </text>
-      <text x="240" y="124" fill="#C9A84C" font-family="Inter,sans-serif" font-size="8" text-anchor="end" letter-spacing="1" opacity="0">13–14 Mayo · 1 noche
-        <animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="2.1s"/>
-      </text>
-
-      <!-- ═══ CITY 3: VENECIA ═══ -->
-      <circle cx="378" cy="155" r="18" fill="url(#dotGlow)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="2.6s"/>
-        <animate attributeName="r" values="18;22;18" dur="3.5s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="378" cy="155" r="7" fill="#C9A84C" stroke="#0B0E17" stroke-width="2.5" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="2.6s"/>
-      </circle>
-      <rect x="363" y="132" width="30" height="14" rx="3" fill="rgba(206,43,55,0.25)" stroke="rgba(206,43,55,0.6)" stroke-width="0.8" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="2.8s"/>
-      </rect>
-      <text x="378" y="142" fill="#FF8A8A" font-family="'Bebas Neue',sans-serif" font-size="10" text-anchor="middle" letter-spacing="1" opacity="0">03
-        <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="2.8s"/>
-      </text>
-      <text x="398" y="152" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="16" letter-spacing="3" opacity="0">VENECIA
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="2.8s"/>
-      </text>
-      <text x="398" y="164" fill="#C9A84C" font-family="Inter,sans-serif" font-size="8" letter-spacing="1" opacity="0">14–16 Mayo · 2 noches
-        <animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="2.9s"/>
-      </text>
-
-      <!-- ═══ CITY 4: PISA ═══ -->
-      <circle cx="240" cy="262" r="14" fill="url(#dotGlow)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="3.6s"/>
-        <animate attributeName="r" values="14;18;14" dur="3.5s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="240" cy="262" r="5" fill="#E8D5A3" stroke="#0B0E17" stroke-width="2" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="3.6s"/>
-      </circle>
-      <text x="215" y="258" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="13" text-anchor="end" letter-spacing="2" opacity="0">PISA
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="3.7s"/>
-      </text>
-      <text x="215" y="269" fill="#C9A84C" font-family="Inter,sans-serif" font-size="7.5" text-anchor="end" letter-spacing="1" opacity="0">16 Mayo · tránsito
-        <animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="3.8s"/>
-      </text>
-
-      <!-- ═══ CITY 5: LIVORNO ═══ -->
-      <circle cx="222" cy="284" r="16" fill="url(#dotGlow)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="4s"/>
-        <animate attributeName="r" values="16;20;16" dur="3.5s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="222" cy="284" r="6" fill="#C9A84C" stroke="#0B0E17" stroke-width="2" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="4s"/>
-      </circle>
-      <rect x="172" y="287" width="30" height="14" rx="3" fill="rgba(206,43,55,0.25)" stroke="rgba(206,43,55,0.6)" stroke-width="0.8" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="4.1s"/>
-      </rect>
-      <text x="187" y="297" fill="#FF8A8A" font-family="'Bebas Neue',sans-serif" font-size="10" text-anchor="middle" letter-spacing="1" opacity="0">05
-        <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="4.1s"/>
-      </text>
-      <text x="195" y="285" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="13" text-anchor="end" letter-spacing="2" opacity="0">LIVORNO
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="4.1s"/>
-      </text>
-      <text x="195" y="296" fill="#C9A84C" font-family="Inter,sans-serif" font-size="7.5" text-anchor="end" letter-spacing="1" opacity="0">16–18 Mayo · 2 noches
-        <animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="4.2s"/>
-      </text>
-
-      <!-- ═══ CITY 6: FLORENCIA (final destination — green badge) ═══ -->
-      <circle cx="285" cy="240" r="20" fill="url(#dotGlow)" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="4.5s"/>
-        <animate attributeName="r" values="20;25;20" dur="3.5s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="285" cy="240" r="8" fill="#C9A84C" stroke="#0B0E17" stroke-width="2.5" opacity="0" filter="url(#glow)">
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="4.5s"/>
-      </circle>
-      <rect x="270" y="220" width="30" height="14" rx="3" fill="rgba(0,146,70,0.25)" stroke="rgba(0,146,70,0.6)" stroke-width="0.8" opacity="0">
-        <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="4.6s"/>
-      </rect>
-      <text x="285" y="230" fill="#7EC99A" font-family="'Bebas Neue',sans-serif" font-size="10" text-anchor="middle" letter-spacing="1" opacity="0">06
-        <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze" begin="4.6s"/>
-      </text>
-      <text x="310" y="240" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="16" letter-spacing="3" opacity="0">FLORENCIA
-        <animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="4.6s"/>
-      </text>
-      <text x="310" y="252" fill="#C9A84C" font-family="Inter,sans-serif" font-size="8" letter-spacing="1" opacity="0">18–21 Mayo · 3 noches
-        <animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="4.7s"/>
-      </text>
-
-      <!-- Title -->
+      <line x1="310" y1="385" x2="268" y2="145" stroke="url(#routeGrad)" stroke-width="2.5" stroke-dasharray="800" stroke-dashoffset="800" opacity="0.65" marker-end="url(#arrowhead)"><animate attributeName="stroke-dashoffset" from="800" to="0" dur="1.8s" fill="freeze" begin="0.5s"/></line>
+      <line x1="268" y1="145" x2="378" y2="155" stroke="url(#routeGrad)" stroke-width="2.5" stroke-dasharray="400" stroke-dashoffset="400" opacity="0.65" marker-end="url(#arrowhead)"><animate attributeName="stroke-dashoffset" from="400" to="0" dur="1s" fill="freeze" begin="2s"/></line>
+      <line x1="378" y1="155" x2="240" y2="262" stroke="url(#routeGrad)" stroke-width="2.5" stroke-dasharray="500" stroke-dashoffset="500" opacity="0.65" marker-end="url(#arrowhead)"><animate attributeName="stroke-dashoffset" from="500" to="0" dur="1.2s" fill="freeze" begin="2.8s"/></line>
+      <line x1="240" y1="262" x2="222" y2="284" stroke="url(#routeGrad)" stroke-width="2.5" stroke-dasharray="100" stroke-dashoffset="100" opacity="0.65" marker-end="url(#arrowhead)"><animate attributeName="stroke-dashoffset" from="100" to="0" dur="0.5s" fill="freeze" begin="3.8s"/></line>
+      <line x1="222" y1="284" x2="285" y2="240" stroke="url(#routeGrad)" stroke-width="2.5" stroke-dasharray="200" stroke-dashoffset="200" opacity="0.65" marker-end="url(#arrowhead)"><animate attributeName="stroke-dashoffset" from="200" to="0" dur="0.7s" fill="freeze" begin="4.1s"/></line>
+      <!-- ROMA -->
+      <circle cx="310" cy="385" r="20" fill="url(#dotGlow)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="0.2s"/><animate attributeName="r" values="20;25;20" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="310" cy="385" r="8" fill="#C9A84C" stroke="#0B0E17" stroke-width="2.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="0.2s"/></circle>
+      <text x="310" y="412" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="18" text-anchor="middle" letter-spacing="4" opacity="0">ROMA<animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="0.4s"/></text>
+      <text x="310" y="425" fill="#C9A84C" font-family="Inter,sans-serif" font-size="8.5" text-anchor="middle" letter-spacing="1" opacity="0">10–13 Mayo · 3 noches<animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="0.5s"/></text>
+      <!-- MILÁN -->
+      <circle cx="268" cy="145" r="18" fill="url(#dotGlow)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="1.8s"/><animate attributeName="r" values="18;22;18" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="268" cy="145" r="7" fill="#C9A84C" stroke="#0B0E17" stroke-width="2.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="1.8s"/></circle>
+      <text x="240" y="112" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="16" text-anchor="end" letter-spacing="3" opacity="0">MILÁN<animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="2s"/></text>
+      <text x="240" y="124" fill="#C9A84C" font-family="Inter,sans-serif" font-size="8" text-anchor="end" letter-spacing="1" opacity="0">13–14 Mayo · 1 noche<animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="2.1s"/></text>
+      <!-- VENECIA -->
+      <circle cx="378" cy="155" r="18" fill="url(#dotGlow)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="2.6s"/><animate attributeName="r" values="18;22;18" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="378" cy="155" r="7" fill="#C9A84C" stroke="#0B0E17" stroke-width="2.5" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="2.6s"/></circle>
+      <text x="398" y="152" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="16" letter-spacing="3" opacity="0">VENECIA<animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="2.8s"/></text>
+      <text x="398" y="164" fill="#C9A84C" font-family="Inter,sans-serif" font-size="8" letter-spacing="1" opacity="0">14–16 Mayo · 2 noches<animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="2.9s"/></text>
+      <!-- PISA -->
+      <circle cx="240" cy="262" r="14" fill="url(#dotGlow)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="3.6s"/><animate attributeName="r" values="14;18;14" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="240" cy="262" r="5" fill="#E8D5A3" stroke="#0B0E17" stroke-width="2" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="3.6s"/></circle>
+      <text x="215" y="258" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="13" text-anchor="end" letter-spacing="2" opacity="0">PISA<animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="3.7s"/></text>
+      <text x="215" y="269" fill="#C9A84C" font-family="Inter,sans-serif" font-size="7.5" text-anchor="end" letter-spacing="1" opacity="0">16 Mayo · tránsito<animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="3.8s"/></text>
+      <!-- LIVORNO -->
+      <circle cx="222" cy="284" r="16" fill="url(#dotGlow)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="4s"/><animate attributeName="r" values="16;20;16" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="222" cy="284" r="6" fill="#C9A84C" stroke="#0B0E17" stroke-width="2" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="4s"/></circle>
+      <text x="195" y="285" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="13" text-anchor="end" letter-spacing="2" opacity="0">LIVORNO<animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="4.1s"/></text>
+      <text x="195" y="296" fill="#C9A84C" font-family="Inter,sans-serif" font-size="7.5" text-anchor="end" letter-spacing="1" opacity="0">16–18 Mayo · 2 noches<animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="4.2s"/></text>
+      <!-- FLORENCIA -->
+      <circle cx="285" cy="240" r="20" fill="url(#dotGlow)" opacity="0"><animate attributeName="opacity" from="0" to="1" dur="0.5s" fill="freeze" begin="4.5s"/><animate attributeName="r" values="20;25;20" dur="3.5s" repeatCount="indefinite"/></circle>
+      <circle cx="285" cy="240" r="8" fill="#C9A84C" stroke="#0B0E17" stroke-width="2.5" opacity="0" filter="url(#glow)"><animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="4.5s"/></circle>
+      <text x="310" y="240" fill="#FFFFFF" font-family="'Bebas Neue',sans-serif" font-size="16" letter-spacing="3" opacity="0">FLORENCIA<animate attributeName="opacity" from="0" to="1" dur="0.4s" fill="freeze" begin="4.6s"/></text>
+      <text x="310" y="252" fill="#C9A84C" font-family="Inter,sans-serif" font-size="8" letter-spacing="1" opacity="0">18–21 Mayo · 3 noches<animate attributeName="opacity" from="0" to="0.85" dur="0.4s" fill="freeze" begin="4.7s"/></text>
       <text x="300" y="28" fill="rgba(201,168,76,0.55)" font-family="'Bebas Neue',sans-serif" font-size="13" text-anchor="middle" letter-spacing="6">RUTA ESTRATÉGICA — PGI 2026</text>
-
-      <!-- ═══ LEGEND ═══ -->
       <g transform="translate(22,640)">
         <rect width="195" height="78" rx="4" fill="rgba(20,24,38,0.85)" stroke="rgba(201,168,76,0.2)" stroke-width="0.8"/>
         <text x="14" y="18" fill="#C9A84C" font-family="'Bebas Neue',sans-serif" font-size="10" letter-spacing="3">LEYENDA</text>
@@ -528,8 +344,6 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
         <line x1="14" y1="68" x2="42" y2="68" stroke="#C9A84C" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowhead)"/>
         <text x="50" y="71" fill="#D4CABC" font-family="Inter,sans-serif" font-size="8.5">Ruta terrestre (bus)</text>
       </g>
-
-      <!-- ═══ DISTANCES ═══ -->
       <g transform="translate(383,640)">
         <rect width="195" height="78" rx="4" fill="rgba(20,24,38,0.85)" stroke="rgba(201,168,76,0.2)" stroke-width="0.8"/>
         <text x="14" y="18" fill="#C9A84C" font-family="'Bebas Neue',sans-serif" font-size="10" letter-spacing="3">DISTANCIAS APROX.</text>
@@ -549,22 +363,22 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
   <div class="divider"></div>
   <div class="itinerary-grid">
     <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">09</div><div class="itinerary-weekday">Sáb</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">✈ Bogotá → Roma</div><ul class="itinerary-activities"><li><span class="activity-type type-travel">Logística</span>Concentración en El Dorado — verificación de documentos, pasaportes y seguros médicos</li><li><span class="activity-type type-travel">Vuelo</span>Vuelo internacional Bogotá → Roma</li></ul></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">10</div><div class="itinerary-weekday">Dom</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Roma — Llegada</div><ul class="itinerary-activities"><li><span class="activity-type type-travel">Traslado</span>Llegada aeropuerto de Roma — transporte grupal al hotel</li><li><span class="activity-type type-hotel">Check-in</span>Hotel Eurostars Roma Aeterna — 3 noches, desayuno buffet incluido</li><li><span class="activity-type type-cultural">Orientación</span>Reconocimiento del área hotelera</li></ul><div class="itinerary-history">Roma, fundada según la tradición en 753 a.C. por Rómulo y Remo, fue capital del Imperio Romano que dominó el Mediterráneo durante siglos. La Ciudad Eterna alberga 2.800 años de historia, arte y fe.</div></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">11</div><div class="itinerary-weekday">Lun</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Roma</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Académico</span>Visita al <strong>Colegio de la Defensa OTAN</strong> — Resp: FAC ~ MY Gutiérrez Moreno Zad</li><li><span class="activity-type type-cultural">Cultural</span>Tour Coliseo Romano y Monte Palatino</li></ul><div class="itinerary-history">El Coliseo (80 d.C.) es el mayor anfiteatro romano jamás construido, con capacidad para 50.000 espectadores. El Monte Palatino fue residencia de emperadores como Augusto y Domiciano. El NDC de la OTAN, fundado en 1951, es la institución de más alto nivel en formación estratégica aliada.</div></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">12</div><div class="itinerary-weekday">Mar</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Roma</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Académico</span>Visita al <strong>CESEDEN</strong> — Resp: ARC ~ CC Quintero Ibáñez Julián</li><li><span class="activity-type type-cultural">Cultural</span>Ciudad del Vaticano — Museos Vaticanos y Basílica de San Pedro</li></ul><div class="itinerary-history">La Ciudad del Vaticano (0,44 km²) es el estado soberano más pequeño del mundo, sede del papado desde el siglo IV. La Basílica de San Pedro (1626) es la iglesia más grande de la cristiandad; los Museos Vaticanos albergan la Capilla Sixtina pintada por Miguel Ángel entre 1508 y 1512.</div></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">13</div><div class="itinerary-weekday">Mié</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Roma → Milán</div><ul class="itinerary-activities"><li><span class="activity-type type-special">Especial</span><strong>Audiencia Papal</strong> en la Santa Sede — Resp: EJC ~ MY Carrera Amaya Juan</li><li><span class="activity-type type-travel">Traslado</span>Bus Roma → Milán | Check-in Hotel Novotel Milano Linate</li><li><span class="activity-type type-cultural">Cultural</span>Visita Piazza del Duomo</li></ul><div class="itinerary-history">Las audiencias papales se celebran desde el siglo V. La Piazza del Duomo de Milán alberga la catedral gótica más grande de Italia (1386-1965), con 3.400 estatuas y 135 agujas de mármol de Candoglia.</div></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">14</div><div class="itinerary-weekday">Jue</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Milán → Venecia</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Industrial</span>Visita <strong>Empresa LEONARDO</strong> — Sección Aeronáutica — Resp: EJC ~ MY Niño Castillo</li><li><span class="activity-type type-travel">Traslado</span>Bus Milán → Venecia | Check-in Hotel Antony Venice (2 noches)</li></ul><div class="itinerary-history">Leonardo S.p.A. hereda la tradición de Finmeccanica (1948). Milán ha sido centro industrial desde la Revolución Industrial italiana (s. XIX) y hoy lidera los sectores de moda, finanzas y defensa aeroespacial del país.</div></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">15</div><div class="itinerary-weekday">Vie</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Venecia</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Naval</span>Visita <strong>Museo Histórico Naval de Venecia</strong> — Resp: ARC ~ CC Camacho Álvarez</li><li><span class="activity-type type-cultural">Cultural</span>Tour en góndola por los Canales Venecianos — Plaza San Marcos</li></ul><div class="itinerary-history">Venecia fue fundada en el siglo V por poblaciones que huían de las invasiones bárbaras. La Serenísima República (697-1797) dominó el comercio mediterráneo y su Arsenal fue la mayor fábrica naval del mundo medieval. La Plaza San Marcos fue descrita por Napoleón como "el salón más bello de Europa".</div></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">16</div><div class="itinerary-weekday">Sáb</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Venecia → Pisa → Livorno</div><ul class="itinerary-activities"><li><span class="activity-type type-cultural">Cultural</span>Pisa: <strong>Torre Inclinada</strong>, Catedral y Baptisterio</li><li><span class="activity-type type-hotel">Check-in</span>Hotel Mercure Tirrenia Green Park, Livorno (2 noches)</li></ul><div class="itinerary-history">La Torre de Pisa (1173-1372) comenzó a inclinarse durante su construcción debido al suelo blando. Pisa fue una de las cuatro Repúblicas Marítimas italianas y su flota rivalizó con Génova por el control del Mediterráneo occidental en los siglos XI-XIII.</div></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">17</div><div class="itinerary-weekday">Dom</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Livorno</div><ul class="itinerary-activities"><li><span class="activity-type type-cultural">Histórico</span>Fortezza Vecchia y Fortezza Nuova — recorrido histórico portuario</li><li><span class="activity-type type-cultural">Cultural</span>Centro Histórico de Livorno — tarde libre</li></ul><div class="itinerary-history">Livorno fue fundada como ciudad ideal por los Médici en 1577, bajo el diseño del arquitecto Buontalenti. Sus "Leyes Livorninas" (1591-1593) la convirtieron en uno de los puertos más cosmopolitas del Mediterráneo. La Fortezza Vecchia (1521) protegió este puerto estratégico durante siglos.</div></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">18</div><div class="itinerary-weekday">Lun</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Livorno → Florencia</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Naval</span>Visita <strong>Escuela Naval Italiana</strong> — Resp: ARC ~ CC Mesa Ramírez Carlos Andrés</li><li><span class="activity-type type-travel">Traslado</span>Bus Livorno → Florencia | Check-in Hotel Hilton Garden Inn Firenze (3 noches)</li></ul><div class="itinerary-history">La Accademia Navale di Livorno, fundada en 1881, es una de las instituciones de formación naval más prestigiosas de Europa. Forma oficiales de la Marina Militare italiana en un programa de cuatro años que combina ciencias navales, ingeniería y liderazgo.</div></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">19</div><div class="itinerary-weekday">Mar</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Florencia</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Académico</span>Visita <strong>Instituto Geográfico Militar del Ejército Italiano</strong> — Resp: FAC ~ MY Beltrán Morales</li><li><span class="activity-type type-cultural">Cultural</span>Piazza della Signoria, Ponte Vecchio</li></ul><div class="itinerary-history">El IGM (1872) es el organismo cartográfico oficial de Italia. La Piazza della Signoria ha sido el centro del poder político florentino desde el siglo XIII. El Ponte Vecchio (1345) es el puente habitado más famoso del mundo y el único que sobrevivió a la destrucción nazi en 1944.</div></div></div>
-    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">20</div><div class="itinerary-weekday">Mié</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Florencia</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Aérea</span>Visita <strong>Escuela Militar "Giulio Douhet"</strong> — Resp: EJC ~ MY Rozo Guzmán Cristhian</li><li><span class="activity-type type-cultural">Cultural</span>Galerías Uffizi y Galería de la Academia</li><li><span class="activity-type type-special">Cierre</span>Cena de cierre del grupo — última noche en Italia</li></ul><div class="itinerary-history">La Galleria degli Uffizi (1581) fue el primer museo público del mundo moderno y alberga obras maestras de Botticelli, Leonardo y Rafael. La Galería de la Academia exhibe el David de Miguel Ángel (1504). La Escuela "Giulio Douhet" honra al primer teórico del poder aéreo estratégico.</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">10</div><div class="itinerary-weekday">Dom</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Roma — Llegada</div><ul class="itinerary-activities"><li><span class="activity-type type-travel">Traslado</span>Llegada aeropuerto de Roma — transporte grupal al hotel</li><li><span class="activity-type type-hotel">Check-in</span>Hotel Eurostars Roma Aeterna — 3 noches, desayuno buffet incluido</li></ul><div class="itinerary-history">Roma, fundada según la tradición en 753 a.C., fue capital del Imperio Romano que dominó el Mediterráneo durante siglos. La Ciudad Eterna alberga 2.800 años de historia, arte y fe.</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">11</div><div class="itinerary-weekday">Lun</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Roma</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Académico</span>Visita al <strong>Colegio de la Defensa OTAN</strong> — Resp: FAC ~ MY Gutiérrez Moreno Zad</li><li><span class="activity-type type-cultural">Cultural</span>Tour Coliseo Romano y Monte Palatino</li></ul><div class="itinerary-history">El Coliseo (80 d.C.) es el mayor anfiteatro romano jamás construido, con capacidad para 50.000 espectadores. El NDC de la OTAN, fundado en 1951, es la institución de más alto nivel en formación estratégica aliada.</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">12</div><div class="itinerary-weekday">Mar</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Roma</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Académico</span>Visita al <strong>CESEDEN</strong> — Resp: ARC ~ CC Quintero Ibáñez Julián</li><li><span class="activity-type type-cultural">Cultural</span>Ciudad del Vaticano — Museos Vaticanos y Basílica de San Pedro</li></ul><div class="itinerary-history">La Ciudad del Vaticano (0,44 km²) es el estado soberano más pequeño del mundo. La Basílica de San Pedro alberga la Capilla Sixtina pintada por Miguel Ángel entre 1508 y 1512.</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">13</div><div class="itinerary-weekday">Mié</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Roma → Milán</div><ul class="itinerary-activities"><li><span class="activity-type type-special">Especial</span><strong>Audiencia Papal</strong> en la Santa Sede — Resp: EJC ~ MY Carrera Amaya Juan</li><li><span class="activity-type type-travel">Traslado</span>Bus Roma → Milán | Check-in Hotel Novotel Milano Linate</li><li><span class="activity-type type-cultural">Cultural</span>Visita Piazza del Duomo</li></ul><div class="itinerary-history">La Piazza del Duomo de Milán alberga la catedral gótica más grande de Italia (1386–1965), con 3.400 estatuas y 135 agujas de mármol de Candoglia.</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">14</div><div class="itinerary-weekday">Jue</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Milán → Venecia</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Industrial</span>Visita <strong>Empresa LEONARDO</strong> — Sección Aeronáutica — Resp: EJC ~ MY Niño Castillo</li><li><span class="activity-type type-travel">Traslado</span>Bus Milán → Venecia | Check-in Hotel Antony Venice (2 noches)</li></ul><div class="itinerary-history">Leonardo S.p.A. hereda la tradición de Finmeccanica (1948). Milán hoy lidera los sectores de moda, finanzas y defensa aeroespacial del país.</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">15</div><div class="itinerary-weekday">Vie</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Venecia</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Naval</span>Visita <strong>Museo Histórico Naval de Venecia</strong> — Resp: ARC ~ CC Camacho Álvarez</li><li><span class="activity-type type-cultural">Cultural</span>Tour en góndola — Plaza San Marcos y Basílica</li></ul><div class="itinerary-history">La Serenísima República (697–1797) dominó el comercio mediterráneo. Su Arsenal fue la mayor fábrica naval del mundo medieval. San Marcos fue descrita por Napoleón como "el salón más bello de Europa".</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">16</div><div class="itinerary-weekday">Sáb</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Venecia → Pisa → Livorno</div><ul class="itinerary-activities"><li><span class="activity-type type-cultural">Cultural</span>Pisa: <strong>Torre Inclinada</strong>, Catedral y Baptisterio</li><li><span class="activity-type type-hotel">Check-in</span>Hotel Mercure Tirrenia Green Park, Livorno (2 noches)</li></ul><div class="itinerary-history">La Torre de Pisa (1173–1372) comenzó a inclinarse durante su construcción por el suelo blando. Pisa fue una de las cuatro Repúblicas Marítimas italianas, rivalizando con Génova en los siglos XI–XIII.</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">17</div><div class="itinerary-weekday">Dom</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Livorno</div><ul class="itinerary-activities"><li><span class="activity-type type-cultural">Histórico</span>Fortezza Vecchia y Fortezza Nuova — recorrido histórico portuario</li><li><span class="activity-type type-cultural">Cultural</span>Centro Histórico de Livorno — tarde libre</li></ul><div class="itinerary-history">Livorno fue fundada como ciudad ideal por los Médici en 1577. Sus "Leyes Livorninas" (1591–1593) la convirtieron en uno de los puertos más cosmopolitas del Mediterráneo.</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">18</div><div class="itinerary-weekday">Lun</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Livorno → Florencia</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Naval</span>Visita <strong>Escuela Naval Italiana</strong> — Resp: ARC ~ CC Mesa Ramírez Carlos Andrés</li><li><span class="activity-type type-travel">Traslado</span>Bus Livorno → Florencia | Check-in Hotel Hilton Garden Inn Firenze (3 noches)</li></ul><div class="itinerary-history">La Accademia Navale di Livorno, fundada en 1881, forma oficiales en un programa de cuatro años combinando ciencias navales, ingeniería y liderazgo.</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">19</div><div class="itinerary-weekday">Mar</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Florencia</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Académico</span>Visita <strong>Instituto Geográfico Militar del Ejército Italiano</strong> — Resp: FAC ~ MY Beltrán Morales</li><li><span class="activity-type type-cultural">Cultural</span>Piazza della Signoria, Ponte Vecchio</li></ul><div class="itinerary-history">El Ponte Vecchio (1345) es el puente habitado más famoso del mundo y el único que sobrevivió a la destrucción nazi en 1944.</div></div></div>
+    <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">20</div><div class="itinerary-weekday">Mié</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">📍 Florencia</div><ul class="itinerary-activities"><li><span class="activity-type type-academic">Aérea</span>Visita <strong>Escuela Militar "Giulio Douhet"</strong> — Resp: EJC ~ MY Rozo Guzmán Cristhian</li><li><span class="activity-type type-cultural">Cultural</span>Galerías Uffizi y Galería de la Academia</li><li><span class="activity-type type-special">Cierre</span>Cena de cierre del grupo — última noche en Italia</li></ul><div class="itinerary-history">La Galleria degli Uffizi (1581) fue el primer museo público del mundo moderno. La Galería de la Academia exhibe el David de Miguel Ángel (1504).</div></div></div>
     <div class="itinerary-day"><div class="itinerary-date"><div class="itinerary-day-num">21</div><div class="itinerary-weekday">Jue</div><div class="itinerary-month">Mayo</div></div><div class="itinerary-content"><div class="itinerary-city-tag">✈ Florencia → Bogotá</div><ul class="itinerary-activities"><li><span class="activity-type type-travel">Regreso</span>Check-out — traslado al aeropuerto — vuelo de retorno a Colombia</li></ul></div></div>
   </div>
 </section>
 
-<!-- CITIES WITH CAROUSELS -->
+<!-- CITIES -->
 <div class="cities-wrapper" id="ciudades">
   <div class="cities-inner">
     <p class="section-label fade-in">Destinos del Viaje</p>
@@ -576,39 +390,33 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
       <div class="city-photo">
         <div class="city-photo-num">01</div>
         <div class="carousel" id="car-roma" data-total="5" data-cur="0">
-  <div class="ctrack">
-<div class="cslide" data-idx="0"><img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=900&q=75" alt="Coliseo Romano al atardecer"></div>
-<div class="cslide" data-idx="1"><img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?w=900&q=75" alt="Basílica de San Pedro, Ciudad del Vaticano"></div>
-<div class="cslide" data-idx="2"><img src="https://images.unsplash.com/photo-1525874684015-58379d421a52?w=900&q=75" alt="Fontana di Trevi iluminada de noche"></div>
-<div class="cslide" data-idx="3"><img src="https://images.unsplash.com/photo-1555992828-ca4dbe41d294?w=900&q=75" alt="Foro Romano y ruinas imperiales"></div>
-<div class="cslide" data-idx="4"><img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=900&q=75" alt="Castel Sant'Angelo al atardecer"></div>
-  </div>
-  <div class="cdots"><span class="cdot" data-i="0"></span><span class="cdot" data-i="1"></span><span class="cdot" data-i="2"></span><span class="cdot" data-i="3"></span><span class="cdot" data-i="4"></span></div>
-  <button class="carr carr-l" onclick="carMove('roma',-1)">&#8249;</button>
-  <button class="carr carr-r" onclick="carMove('roma',1)">&#8250;</button>
-</div>
+          <div class="ctrack">
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=900&q=75" alt="Coliseo Romano al atardecer"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1531572753322-ad063cecc140?w=900&q=75" alt="Basílica de San Pedro, Vaticano"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1525874684015-58379d421a52?w=900&q=75" alt="Fontana di Trevi iluminada"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1555992828-ca4dbe41d294?w=900&q=75" alt="Foro Romano y ruinas imperiales"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?w=900&q=75" alt="Castel Sant'Angelo al atardecer"></div>
+          </div>
+          <div class="cdots"><button class="cdot" data-i="0"></button><button class="cdot" data-i="1"></button><button class="cdot" data-i="2"></button><button class="cdot" data-i="3"></button><button class="cdot" data-i="4"></button></div>
+          <button class="carr carr-l" onclick="carMove('roma',-1)">&#8249;</button>
+          <button class="carr carr-r" onclick="carMove('roma',1)">&#8250;</button>
+        </div>
       </div>
       <div class="city-info">
         <div class="city-name">Roma</div>
         <div class="city-dates-badge">10 – 13 de Mayo · 3 Noches</div>
         <div class="city-hotel-info"><div class="city-hotel-label">Alojamiento</div><div class="city-hotel-name">Eurostars Roma Aeterna ⭐⭐⭐⭐</div><div class="city-hotel-nights">3 noches · Habitación doble · Desayuno buffet</div></div>
-        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>Fundada en 753 a.C., Roma fue capital del imperio más extenso de la antigüedad. Cuna del derecho, la ingeniería y la organización militar occidental. Desde el siglo IV, sede del papado católico. Hoy combina 2.800 años de historia con su rol como capital de la República Italiana.</p></div>
-        <p class="city-desc">La Ciudad Eterna — capital de Italia y sede de la civilización romana. Museo a cielo abierto donde conviven el Coliseo, el Foro Romano, el Panteón y la majestuosa Ciudad del Vaticano. Sede del NATO Defense College, referencia académica mundial en estudios de defensa y estrategia.</p>
+        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>Fundada en 753 a.C., Roma fue capital del imperio más extenso de la antigüedad. Cuna del derecho, la ingeniería y la organización militar occidental. Desde el siglo IV, sede del papado católico.</p></div>
+        <p class="city-desc">La Ciudad Eterna — museo a cielo abierto donde conviven el Coliseo, el Foro Romano, el Panteón y la Ciudad del Vaticano. Sede del NATO Defense College, referencia académica mundial en estudios de defensa.</p>
         <div class="city-recommendations">
           <h4>🍽 Restaurantes Recomendados</h4>
-          <ul class="rec-list">
-            <li>🍴 <strong>La Pergola</strong> — 3 estrellas Michelin en Rome Cavalieri, vistas panorámicas</li>
-            <li>🍴 <strong>Da Enzo al 29</strong> — Cocina romana auténtica en Trastevere</li>
-          </ul><br>
+          <ul class="rec-list"><li>🍴 <strong>La Pergola</strong> — 3 estrellas Michelin, vistas panorámicas</li><li>🍴 <strong>Da Enzo al 29</strong> — Cocina romana auténtica en Trastevere</li></ul><br>
           <h4>🗺 Visitas Adicionales</h4>
-          <ul class="rec-list">
-            <li>🏛 <strong>Fontana di Trevi</strong> — Monumento barroco icónico</li>
-            <li>🏛 <strong>Castel Sant'Angelo</strong> — Antigua fortaleza papal a orillas del Tíber</li>
-          </ul>
+          <ul class="rec-list"><li>🏛 <strong>Fontana di Trevi</strong> — Monumento barroco icónico</li><li>🏛 <strong>Castel Sant'Angelo</strong> — Fortaleza papal a orillas del Tíber</li></ul>
         </div>
         <div class="city-services">
-          <div class="service-block"><h5>🚇 Transporte Público</h5><ul><li>🚇 <strong>Metro Línea C</strong> — Estación Lodi a 5 min del hotel, conecta con el centro</li><li>🚌 <strong>Bus 105, 51</strong> — Paradas cercanas al hotel, ruta al Coliseo</li><li>🎫 <strong>Roma 48h Pass</strong> (€28) — Metro, bus y tram ilimitados</li></ul></div>
-          <div class="service-block"><h5>🧺 Lavandería Cercana</h5><ul><li>🧺 <strong>Speed Queen - Via del Pigneto 40</strong> — ~500 m del hotel, self-service</li><li>🧺 <strong>Speed Queen - Via Mario Chiri 29</strong> — ~1 km, zona Prenestina</li></ul></div>
+          <div class="service-block"><h5>🚇 Transporte Público</h5><ul><li>🚇 <strong>Metro Línea C</strong> — Estación Lodi a 5 min del hotel</li><li>🎫 <strong>Roma 48h Pass</strong> (€28) — Metro, bus y tram ilimitados</li></ul></div>
+          <div class="service-block"><h5>🧺 Lavandería Cercana</h5><ul><li>🧺 <strong>Speed Queen - Via del Pigneto 40</strong> — ~500 m, self-service</li></ul></div>
         </div>
       </div>
     </div>
@@ -618,157 +426,139 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
       <div class="city-photo">
         <div class="city-photo-num">02</div>
         <div class="carousel" id="car-milan" data-total="4" data-cur="0">
-  <div class="ctrack">
-<div class="cslide" data-idx="0"><img src="https://images.unsplash.com/photo-1520440229-6469a149ac59?w=900&q=75" alt="Duomo di Milano, catedral gótica"></div>
-<div class="cslide" data-idx="1"><img src="https://images.unsplash.com/photo-1690122582259-d3e7b2cde7ec?q=80&w=2340&auto=format&fit=crop" alt="Galleria Vittorio Emanuele II interior"></div>
-<div class="cslide" data-idx="2"><img src="https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?w=900&q=75" alt="Castello Sforzesco de Milán"></div>
-<div class="cslide" data-idx="3"><img src="https://images.unsplash.com/photo-1594156596782-656c93e4d504?w=900&q=75" alt="Navigli al atardecer, Milán"></div>
-  </div>
-  <div class="cdots"><span class="cdot" data-i="0"></span><span class="cdot" data-i="1"></span><span class="cdot" data-i="2"></span><span class="cdot" data-i="3"></span></div>
-  <button class="carr carr-l" onclick="carMove('milan',-1)">&#8249;</button>
-  <button class="carr carr-r" onclick="carMove('milan',1)">&#8250;</button>
-</div>
+          <div class="ctrack">
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1520440229-6469a149ac59?w=900&q=75" alt="Duomo di Milano, catedral gótica"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1690122582259-d3e7b2cde7ec?w=900&q=75" alt="Galleria Vittorio Emanuele II"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1610016302534-6f67f1c968d8?w=900&q=75" alt="Castello Sforzesco de Milán"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1594156596782-656c93e4d504?w=900&q=75" alt="Navigli al atardecer, Milán"></div>
+          </div>
+          <div class="cdots"><button class="cdot" data-i="0"></button><button class="cdot" data-i="1"></button><button class="cdot" data-i="2"></button><button class="cdot" data-i="3"></button></div>
+          <button class="carr carr-l" onclick="carMove('milan',-1)">&#8249;</button>
+          <button class="carr carr-r" onclick="carMove('milan',1)">&#8250;</button>
+        </div>
       </div>
       <div class="city-info">
         <div class="city-name">Milán</div>
         <div class="city-dates-badge">13 – 14 de Mayo · 1 Noche</div>
         <div class="city-hotel-info"><div class="city-hotel-label">Alojamiento</div><div class="city-hotel-name">Novotel Milano Linate ⭐⭐⭐⭐</div><div class="city-hotel-nights">1 noche · Habitación doble · Desayuno buffet</div></div>
-        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>Mediolanum fue fundada por los celtas en el 590 a.C. y romanizada en 222 a.C. Capital del Imperio de Occidente (286-402 d.C.), fue donde Constantino promulgó el Edicto de Milán (313 d.C.) que legalizó el cristianismo. Ducado renacentista bajo los Visconti y Sforza, hoy es el motor económico de Italia.</p></div>
-        <p class="city-desc">Capital económica e industrial de Italia, sede de Leonardo S.p.A., uno de los 10 principales conglomerados mundiales en aeroespacial, defensa y seguridad. La Piazza del Duomo con su imponente catedral gótica es el corazón de esta metrópolis cosmopolita y de moda.</p>
+        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>Mediolanum fue fundada por los celtas en 590 a.C. y romanizada en 222 a.C. Fue donde Constantino promulgó el Edicto de Milán (313 d.C.). Ducado renacentista bajo los Visconti y Sforza, hoy es el motor económico de Italia.</p></div>
+        <p class="city-desc">Capital económica e industrial de Italia, sede de Leonardo S.p.A., uno de los 10 principales conglomerados mundiales en aeroespacial, defensa y seguridad.</p>
         <div class="city-recommendations">
           <h4>🍽 Restaurantes Recomendados</h4>
-          <ul class="rec-list">
-            <li>🍴 <strong>Trattoria del Nuovo Macello</strong> — Risotto alla milanese insuperable</li>
-            <li>🍴 <strong>Pisacco</strong> — Osteria moderna en el Brera</li>
-          </ul><br>
+          <ul class="rec-list"><li>🍴 <strong>Trattoria del Nuovo Macello</strong> — Risotto alla milanese insuperable</li><li>🍴 <strong>Pisacco</strong> — Osteria moderna en el Brera</li></ul><br>
           <h4>🗺 Visitas Adicionales</h4>
-          <ul class="rec-list">
-            <li>🎨 <strong>La Última Cena</strong> — Leonardo da Vinci en Santa Maria delle Grazie</li>
-            <li>🛍 <strong>Galleria Vittorio Emanuele II</strong> — La galería más antigua del mundo</li>
-          </ul>
+          <ul class="rec-list"><li>🎨 <strong>La Última Cena</strong> — Leonardo da Vinci en Santa Maria delle Grazie</li><li>🛍 <strong>Galleria Vittorio Emanuele II</strong></li></ul>
         </div>
         <div class="city-services">
-          <div class="service-block"><h5>🚇 Transporte Público</h5><ul><li>🚌 <strong>Bus 73</strong> — Aeropuerto Linate al centro (Piazza Duomo) en 25 min</li><li>🚇 <strong>Metro M4 (Azul)</strong> — Estación Linate, conexión directa al centro</li><li>🎫 <strong>Billete ATM</strong> (€2.20) — Válido 90 min en metro, bus y tram</li></ul></div>
-          <div class="service-block"><h5>🧺 Lavandería Cercana</h5><ul><li>🧺 <strong>Lavanda Self - Via M.L. King 2</strong> — Peschiera Borromeo, ~3 km, horario 6:00-23:00</li><li>🧺 <strong>Lavandaself - Via Roma 78T</strong> — Segrate, ~4 km</li></ul></div>
+          <div class="service-block"><h5>🚇 Transporte Público</h5><ul><li>🚇 <strong>Metro M4 (Azul)</strong> — Estación Linate, conexión directa al centro</li><li>🎫 <strong>Billete ATM</strong> (€2.20) — Válido 90 min</li></ul></div>
+          <div class="service-block"><h5>🧺 Lavandería Cercana</h5><ul><li>🧺 <strong>Lavanda Self - Via M.L. King 2</strong> — ~3 km, 6:00–23:00</li></ul></div>
         </div>
       </div>
     </div>
 
-    <!-- VENECIA -->
+    <!-- VENECIA — imágenes corregidas -->
     <div class="city-card fade-in">
       <div class="city-photo">
         <div class="city-photo-num">03</div>
         <div class="carousel" id="car-venice" data-total="5" data-cur="0">
-  <div class="ctrack">
-<div class="cslide" data-idx="0"><img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=900&q=75" alt="Canal Grande de Venecia al atardecer"></div>
-<div class="cslide" data-idx="1"><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=900&q=75" alt="Piazza San Marco, Venecia"></div>
-<div class="cslide" data-idx="2"><img src="https://images.unsplash.com/photo-1534113414509-0eec2bfb493f?w=900&q=75" alt="Góndola en los canales venecianos"></div>
-<div class="cslide" data-idx="3"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=900&q=75" alt="Puente de Rialto, Venecia"></div>
-<div class="cslide" data-idx="4"><img src="https://images.unsplash.com/photo-1582979512210-99b6a53386f9?w=900&q=75" alt="Isla de Murano, cristal veneciano"></div>
-  </div>
-  <div class="cdots"><span class="cdot" data-i="0"></span><span class="cdot" data-i="1"></span><span class="cdot" data-i="2"></span><span class="cdot" data-i="3"></span><span class="cdot" data-i="4"></span></div>
-  <button class="carr carr-l" onclick="carMove('venice',-1)">&#8249;</button>
-  <button class="carr carr-r" onclick="carMove('venice',1)">&#8250;</button>
-</div>
+          <div class="ctrack">
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=900&q=75" alt="Canal Grande de Venecia al atardecer"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=900&q=75" alt="Piazza San Marco, Venecia"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1534113414509-0eec2bfb493f?w=900&q=75" alt="Góndola en los canales venecianos"></div>
+            <!-- FIX 1: Puente de Rialto corregido -->
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1567591370939-dae5ab2fa29a?w=900&q=75" alt="Puente de Rialto, Venecia"></div>
+            <!-- FIX 2: Isla de Burano — isla de colores de la laguna veneciana -->
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1548199569-3e1c6aa8f469?w=900&q=75" alt="Isla de Burano, casas de colores en la laguna veneciana"></div>
+          </div>
+          <div class="cdots"><button class="cdot" data-i="0"></button><button class="cdot" data-i="1"></button><button class="cdot" data-i="2"></button><button class="cdot" data-i="3"></button><button class="cdot" data-i="4"></button></div>
+          <button class="carr carr-l" onclick="carMove('venice',-1)">&#8249;</button>
+          <button class="carr carr-r" onclick="carMove('venice',1)">&#8250;</button>
+        </div>
       </div>
       <div class="city-info">
         <div class="city-name">Venecia</div>
         <div class="city-dates-badge">14 – 16 de Mayo · 2 Noches</div>
-        <div class="city-hotel-info"><div class="city-hotel-label">Alojamiento</div><div class="city-hotel-name">Antony Venice Hotel ⭐⭐⭐⭐</div><div class="city-hotel-nights">2 noches · Habitación doble · Desayuno buffet · www.antonyhotel.it</div></div>
-        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>Fundada en el siglo V por refugiados de las invasiones bárbaras, Venecia se convirtió en la República Serenísima (697-1797), la república más longeva de la historia. Su Arsenal fue la mayor instalación industrial del mundo medieval y su flota dominó el comercio entre Europa y Oriente durante siglos.</p></div>
-        <p class="city-desc">La Serenissima — ciudad construida sobre 118 islas y Patrimonio UNESCO. Una de las repúblicas marítimas más poderosas de la historia, con una tradición naval sin igual. Sus canales, puentes y palacios góticos crean una atmósfera única e irrepetible en el mundo.</p>
+        <div class="city-hotel-info"><div class="city-hotel-label">Alojamiento</div><div class="city-hotel-name">Antony Venice Hotel ⭐⭐⭐⭐</div><div class="city-hotel-nights">2 noches · Habitación doble · Desayuno buffet</div></div>
+        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>Fundada en el siglo V, Venecia se convirtió en la República Serenísima (697–1797), la república más longeva de la historia. Su Arsenal fue la mayor instalación industrial del mundo medieval.</p></div>
+        <p class="city-desc">La Serenissima — ciudad construida sobre 118 islas y Patrimonio UNESCO. Una de las repúblicas marítimas más poderosas de la historia, con una tradición naval sin igual.</p>
         <div class="city-recommendations">
           <h4>🍽 Restaurantes Recomendados</h4>
-          <ul class="rec-list">
-            <li>🍴 <strong>Osteria alle Testiere</strong> — Mejor mariscos de Venecia</li>
-            <li>🍴 <strong>Trattoria da Jonatan</strong> — Risotto di mare excepcional</li>
-          </ul><br>
+          <ul class="rec-list"><li>🍴 <strong>Osteria alle Testiere</strong> — Mejor mariscos de Venecia</li><li>🍴 <strong>Trattoria da Jonatan</strong> — Risotto di mare excepcional</li></ul><br>
           <h4>🗺 Visitas Adicionales</h4>
-          <ul class="rec-list">
-            <li>🏛 <strong>Isla de Murano</strong> — Maestros del vidrio soplado desde 1291</li>
-            <li>🏛 <strong>Palazzo Ducale</strong> — Símbolo del poder veneciano (siglo XIV)</li>
-          </ul>
+          <ul class="rec-list"><li>🏛 <strong>Isla de Murano</strong> — Maestros del vidrio soplado desde 1291</li><li>🏛 <strong>Palazzo Ducale</strong> — Símbolo del poder veneciano (s. XIV)</li></ul>
         </div>
         <div class="city-services">
-          <div class="service-block"><h5>🚇 Transporte Público</h5><ul><li>🚌 <strong>Bus ACTV 5</strong> — Desde Mestre a Piazzale Roma (acceso a Venecia), 15 min</li><li>🚂 <strong>Tren Regional</strong> — Mestre → Venezia Santa Lucia, 10 min, frecuencia cada 5-10 min</li><li>⛴ <strong>Vaporetto ACTV</strong> — Líneas 1, 2 por el Gran Canal. Pase 24h: €25</li></ul></div>
-          <div class="service-block"><h5>🧺 Lavandería Cercana</h5><ul><li>🧺 <strong>Lava Magic - Via G. Gozzi 49/A</strong> — Mestre, ~2.5 km, 7:00-22:00, jabón incluido</li><li>🧺 <strong>Lava Magic - Via Verdi 88</strong> — Mestre, ~2.5 km, misma cadena</li></ul></div>
+          <div class="service-block"><h5>🚇 Transporte Público</h5><ul><li>⛴ <strong>Vaporetto ACTV</strong> — Líneas 1 y 2 por el Gran Canal. Pase 24h: €25</li><li>🚂 <strong>Tren Regional</strong> — Mestre → Venezia Santa Lucia, 10 min</li></ul></div>
+          <div class="service-block"><h5>🧺 Lavandería Cercana</h5><ul><li>🧺 <strong>Lava Magic - Via G. Gozzi 49/A</strong> — Mestre, ~2.5 km, 7:00–22:00</li></ul></div>
         </div>
       </div>
     </div>
 
-    <!-- PISA -->
+    <!-- PISA — imágenes corregidas -->
     <div class="city-card reverse fade-in">
       <div class="city-photo">
         <div class="city-photo-num">04</div>
         <div class="carousel" id="car-pisa" data-total="3" data-cur="0">
-  <div class="ctrack">
-<div class="cslide" data-idx="0"><img src="https://images.unsplash.com/photo-1615371082603-dc38013ef2a2?q=80&w=2054&auto=format&fit=crop" alt="Torre Inclinada de Pisa y Catedral"></div>
-<div class="cslide" data-idx="1"><img src="https://images.unsplash.com/photo-1568797629599-05114a2e4c6e?w=900&q=75" alt="Baptisterio de Pisa al atardecer"></div>
-<div class="cslide" data-idx="2"><img src="https://images.unsplash.com/photo-1564410267841-915d8e4d71ea?w=900&q=75" alt="Lungarno de Pisa junto al río Arno"></div>
-  </div>
-  <div class="cdots"><span class="cdot" data-i="0"></span><span class="cdot" data-i="1"></span><span class="cdot" data-i="2"></span></div>
-  <button class="carr carr-l" onclick="carMove('pisa',-1)">&#8249;</button>
-  <button class="carr carr-r" onclick="carMove('pisa',1)">&#8250;</button>
-</div>
+          <div class="ctrack">
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1615371082603-dc38013ef2a2?w=900&q=75" alt="Torre Inclinada de Pisa y Catedral"></div>
+            <!-- FIX 3: Baptisterio y Catedral de Pisa corregido -->
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1541943869308-b8c4d37eda9c?w=900&q=75" alt="Piazza dei Miracoli — Baptisterio y Catedral de Pisa"></div>
+            <!-- FIX 4: Vista aérea Piazza dei Miracoli -->
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1573821663912-569905455b1c?w=900&q=75" alt="Vista aérea de la Piazza dei Miracoli, Pisa"></div>
+          </div>
+          <div class="cdots"><button class="cdot" data-i="0"></button><button class="cdot" data-i="1"></button><button class="cdot" data-i="2"></button></div>
+          <button class="carr carr-l" onclick="carMove('pisa',-1)">&#8249;</button>
+          <button class="carr carr-r" onclick="carMove('pisa',1)">&#8250;</button>
+        </div>
       </div>
       <div class="city-info">
         <div class="city-name">Pisa</div>
         <div class="city-dates-badge">16 de Mayo · Tránsito</div>
         <div class="city-hotel-info"><div class="city-hotel-label">Visita de Paso</div><div class="city-hotel-name">Piazza dei Miracoli</div><div class="city-hotel-nights">Almuerzo libre · Tickets incluidos</div></div>
-        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>República Marítima desde el siglo XI, Pisa fue una de las cuatro grandes potencias navales italianas junto con Génova, Venecia y Amalfi. Su flota venció a los sarracenos en las Islas Baleares (1113-1115). La construcción de la Torre comenzó en 1173 y su famosa inclinación inició durante la obra por el suelo arcilloso.</p></div>
-        <p class="city-desc">Hogar de uno de los conjuntos arquitectónicos más reconocidos del mundo, la Piazza dei Miracoli —declarada Patrimonio de la Humanidad— alberga la famosa Torre Inclinada, la Catedral de Santa Maria Assunta y el Baptisterio de acústica extraordinaria.</p>
+        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>República Marítima desde el siglo XI, Pisa fue una de las cuatro grandes potencias navales italianas. La construcción de la Torre comenzó en 1173 y su famosa inclinación inició durante la obra por el suelo arcilloso.</p></div>
+        <p class="city-desc">Hogar de la Piazza dei Miracoli —Patrimonio de la Humanidad— con la famosa Torre Inclinada, la Catedral de Santa Maria Assunta y el Baptisterio de acústica extraordinaria.</p>
         <div class="city-recommendations">
           <h4>🍽 Almuerzo Recomendado</h4>
-          <ul class="rec-list">
-            <li>🍴 <strong>Osteria di Piazza Dante</strong> — Cocina toscana auténtica</li>
-            <li>🍴 <strong>Trattoria Sant'Omobono</strong> — Cecina, plato típico pisano</li>
-          </ul><br>
+          <ul class="rec-list"><li>🍴 <strong>Osteria di Piazza Dante</strong> — Cocina toscana auténtica</li><li>🍴 <strong>Trattoria Sant'Omobono</strong> — Cecina, plato típico pisano</li></ul><br>
           <h4>🗺 En la Piazza dei Miracoli</h4>
-          <ul class="rec-list">
-            <li>🏛 <strong>Subida a la Torre</strong> — 251 escalones hasta la cima</li>
-            <li>🏛 <strong>Baptisterio</strong> — Eco natural de 7 segundos</li>
-          </ul>
+          <ul class="rec-list"><li>🏛 <strong>Subida a la Torre</strong> — 251 escalones hasta la cima</li><li>🏛 <strong>Baptisterio</strong> — Eco natural de 7 segundos</li></ul>
         </div>
       </div>
     </div>
 
-    <!-- LIVORNO -->
+    <!-- LIVORNO — imágenes corregidas -->
     <div class="city-card fade-in">
       <div class="city-photo">
         <div class="city-photo-num">05</div>
         <div class="carousel" id="car-livorno" data-total="4" data-cur="0">
-  <div class="ctrack">
-<div class="cslide" data-idx="0"><img src="https://images.unsplash.com/photo-1632225468406-8211825a4e58?q=80&w=2148&auto=format&fit=crop" alt="Puerto de Livorno al atardecer"></div>
-<div class="cslide" data-idx="1"><img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=900&q=75" alt="Costa del Mar Tirreno, Livorno"></div>
-<div class="cslide" data-idx="2"><img src="https://images.unsplash.com/photo-1601999109332-4cbe82e5b2f2?w=900&q=75" alt="Terrazza Mascagni, Livorno"></div>
-<div class="cslide" data-idx="3"><img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?w=900&q=75" alt="Costa toscana al atardecer"></div>
-  </div>
-  <div class="cdots"><span class="cdot" data-i="0"></span><span class="cdot" data-i="1"></span><span class="cdot" data-i="2"></span><span class="cdot" data-i="3"></span></div>
-  <button class="carr carr-l" onclick="carMove('livorno',-1)">&#8249;</button>
-  <button class="carr carr-r" onclick="carMove('livorno',1)">&#8250;</button>
-</div>
+          <div class="ctrack">
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1632225468406-8211825a4e58?w=900&q=75" alt="Puerto de Livorno al atardecer"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=900&q=75" alt="Costa del Mar Tirreno, Livorno"></div>
+            <!-- FIX 5: Terrazza Mascagni / paseo costero italiano -->
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=900&q=75" alt="Paseo marítimo costero italiano — Terrazza Mascagni"></div>
+            <!-- FIX 6: Costa toscana y puerto histórico -->
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1504019347908-b45f9b0b8dd5?w=900&q=75" alt="Costa toscana — Livorno histórico"></div>
+          </div>
+          <div class="cdots"><button class="cdot" data-i="0"></button><button class="cdot" data-i="1"></button><button class="cdot" data-i="2"></button><button class="cdot" data-i="3"></button></div>
+          <button class="carr carr-l" onclick="carMove('livorno',-1)">&#8249;</button>
+          <button class="carr carr-r" onclick="carMove('livorno',1)">&#8250;</button>
+        </div>
       </div>
       <div class="city-info">
         <div class="city-name">Livorno</div>
         <div class="city-dates-badge">16 – 18 de Mayo · 2 Noches</div>
         <div class="city-hotel-info"><div class="city-hotel-label">Alojamiento</div><div class="city-hotel-name">Mercure Tirrenia Green Park ⭐⭐⭐⭐</div><div class="city-hotel-nights">2 noches · Habitación doble · Desayuno buffet</div></div>
-        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>Livorno fue diseñada como "ciudad ideal" por los Médici en 1577 bajo el arquitecto Buontalenti. Las "Leyes Livorninas" (1591-1593) garantizaron libertad religiosa, atrayendo comerciantes de toda Europa y el Mediterráneo. Su puerto fue clave para la Toscana como puerta al mar Tirreno y base de la flota del Gran Ducado.</p></div>
-        <p class="city-desc">Ciudad portuaria toscana con rica historia militar y marítima. Sede de la prestigiosa Accademia Navale Italiana, fundada en 1881 — una de las academias navales más antiguas del mundo. Sus Fortezze medievales testimonian el poder defensivo que protegió este puerto estratégico del Mediterráneo.</p>
+        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>Livorno fue diseñada como "ciudad ideal" por los Médici en 1577. Las "Leyes Livorninas" (1591–1593) garantizaron libertad religiosa, convirtiendo su puerto en el más cosmopolita del Mediterráneo.</p></div>
+        <p class="city-desc">Ciudad portuaria toscana con rica historia militar y marítima. Sede de la Accademia Navale Italiana (1881) — una de las academias navales más prestigiosas del mundo.</p>
         <div class="city-recommendations">
           <h4>🍽 Restaurantes Recomendados</h4>
-          <ul class="rec-list">
-            <li>🍴 <strong>Cantina Senese</strong> — Cacciucco, el guiso de mariscos livornés</li>
-            <li>🍴 <strong>Osteria del Mare</strong> — Langosta fresca frente al puerto</li>
-          </ul><br>
+          <ul class="rec-list"><li>🍴 <strong>Cantina Senese</strong> — Cacciucco, el guiso de mariscos livornés</li><li>🍴 <strong>Osteria del Mare</strong> — Langosta fresca frente al puerto</li></ul><br>
           <h4>🗺 Visitas Adicionales</h4>
-          <ul class="rec-list">
-            <li>🏛 <strong>Venezia Nuova</strong> — Los canales de Livorno, "pequeña Venecia toscana"</li>
-            <li>⛵ <strong>Lungomare</strong> — Paseo costero con vistas al mar Tirreno</li>
-          </ul>
+          <ul class="rec-list"><li>🏛 <strong>Venezia Nuova</strong> — Los canales de Livorno</li><li>⛵ <strong>Terrazza Mascagni</strong> — Paseo costero con vistas al mar Tirreno</li></ul>
         </div>
         <div class="city-services">
-          <div class="service-block"><h5>🚇 Transporte Público</h5><ul><li>🚌 <strong>Bus CTT Nord Línea 10</strong> — Tirrenia a Livorno centro, ~20 min</li><li>🚂 <strong>Tren Regional</strong> — Livorno Centrale a Pisa Centrale, 15 min</li><li>🚲 <strong>Bicicletas</strong> — Zona costera ideal para recorrer en bicicleta</li></ul></div>
-          <div class="service-block"><h5>🧺 Lavandería Cercana</h5><ul><li>🧺 <strong>Lavanderia Bucalossi - Via P. Calcesana 136</strong> — San Giuliano Terme, ~10 km</li><li>🧺 <strong>LAVAPIU - Pisa</strong> — Zona Don Bosco, ~12 km. Consultar recepción del hotel (servicio propio)</li></ul></div>
+          <div class="service-block"><h5>🚇 Transporte Público</h5><ul><li>🚌 <strong>Bus CTT Nord Línea 10</strong> — Tirrenia a Livorno centro, ~20 min</li><li>🚂 <strong>Tren Regional</strong> — Livorno Centrale a Pisa, 15 min</li></ul></div>
+          <div class="service-block"><h5>🧺 Lavandería Cercana</h5><ul><li>🧺 Consultar servicio de lavandería del hotel (servicio propio disponible)</li></ul></div>
         </div>
       </div>
     </div>
@@ -778,39 +568,33 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
       <div class="city-photo">
         <div class="city-photo-num">06</div>
         <div class="carousel" id="car-florence" data-total="5" data-cur="0">
-  <div class="ctrack">
-<div class="cslide" data-idx="0"><img src="https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?w=900&q=75" alt="Cattedrale di Firenze, cúpula de Brunelleschi"></div>
-<div class="cslide" data-idx="1"><img src="https://images.unsplash.com/photo-1543429257-3eb0b65d9c58?w=900&q=75" alt="Ponte Vecchio sobre el río Arno, Florencia"></div>
-<div class="cslide" data-idx="2"><img src="https://images.unsplash.com/photo-1476362174823-3a23f4aa6d76?w=900&q=75" alt="Panorámica de Florencia desde Piazzale Michelangelo"></div>
-<div class="cslide" data-idx="3"><img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=900&q=75" alt="Galería Uffizi interior, Florencia"></div>
-<div class="cslide" data-idx="4"><img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=900&q=75" alt="Jardines de Boboli, Palacio Pitti"></div>
-  </div>
-  <div class="cdots"><span class="cdot" data-i="0"></span><span class="cdot" data-i="1"></span><span class="cdot" data-i="2"></span><span class="cdot" data-i="3"></span><span class="cdot" data-i="4"></span></div>
-  <button class="carr carr-l" onclick="carMove('florence',-1)">&#8249;</button>
-  <button class="carr carr-r" onclick="carMove('florence',1)">&#8250;</button>
-</div>
+          <div class="ctrack">
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1541370976299-4d24ebbc9077?w=900&q=75" alt="Cúpula de Brunelleschi, Florencia"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1543429257-3eb0b65d9c58?w=900&q=75" alt="Ponte Vecchio sobre el río Arno"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1476362174823-3a23f4aa6d76?w=900&q=75" alt="Panorámica de Florencia desde Piazzale Michelangelo"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1504893524553-b855bce32c67?w=900&q=75" alt="Galería Uffizi interior, Florencia"></div>
+            <div class="cslide"><img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=900&q=75" alt="Jardines de Boboli, Palacio Pitti"></div>
+          </div>
+          <div class="cdots"><button class="cdot" data-i="0"></button><button class="cdot" data-i="1"></button><button class="cdot" data-i="2"></button><button class="cdot" data-i="3"></button><button class="cdot" data-i="4"></button></div>
+          <button class="carr carr-l" onclick="carMove('florence',-1)">&#8249;</button>
+          <button class="carr carr-r" onclick="carMove('florence',1)">&#8250;</button>
+        </div>
       </div>
       <div class="city-info">
         <div class="city-name">Florencia</div>
         <div class="city-dates-badge">18 – 21 de Mayo · 3 Noches</div>
-        <div class="city-hotel-info"><div class="city-hotel-label">Alojamiento</div><div class="city-hotel-name">Hilton Garden Inn Firenze Novoli ⭐⭐⭐⭐</div><div class="city-hotel-nights">3 noches · Habitación doble · Desayuno buffet · www.hilton.com</div></div>
-        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>Fundada como colonia romana en 59 a.C., Florencia se convirtió en la cuna del Renacimiento bajo el mecenazgo de los Médici (siglos XV-XVI). Aquí nacieron o trabajaron Leonardo da Vinci, Miguel Ángel, Botticelli, Maquiavelo y Galileo. Capital del Reino de Italia entre 1865 y 1871, su centro histórico es Patrimonio UNESCO desde 1982.</p></div>
-        <p class="city-desc">La cuna del Renacimiento italiano y ciudad de los Médici. Florencia es patrimonio cultural de la humanidad y sede del David de Miguel Ángel, la Primavera de Botticelli y la cúpula de Brunelleschi. Ciudad final de la PGI 2026, alberga la Escuela "Giulio Douhet" y el Instituto Geográfico Militar.</p>
+        <div class="city-hotel-info"><div class="city-hotel-label">Alojamiento</div><div class="city-hotel-name">Hilton Garden Inn Firenze Novoli ⭐⭐⭐⭐</div><div class="city-hotel-nights">3 noches · Habitación doble · Desayuno buffet</div></div>
+        <div class="city-history"><h5>📜 Reseña Histórica</h5><p>Fundada como colonia romana en 59 a.C., Florencia se convirtió en la cuna del Renacimiento bajo los Médici (siglos XV–XVI). Aquí nacieron o trabajaron Leonardo da Vinci, Miguel Ángel, Botticelli y Galileo.</p></div>
+        <p class="city-desc">La cuna del Renacimiento italiano, sede del David de Miguel Ángel y la cúpula de Brunelleschi. Ciudad final de la PGI 2026, alberga la Escuela "Giulio Douhet" y el Instituto Geográfico Militar.</p>
         <div class="city-recommendations">
           <h4>🍽 Restaurantes Recomendados</h4>
-          <ul class="rec-list">
-            <li>🍴 <strong>Buca Mario</strong> — El restaurante más antiguo de Florencia (1886)</li>
-            <li>🍴 <strong>Enoteca Pinchiorri</strong> — Tres estrellas Michelin, 150.000 botellas</li>
-          </ul><br>
+          <ul class="rec-list"><li>🍴 <strong>Buca Mario</strong> — El restaurante más antiguo de Florencia (1886)</li><li>🍴 <strong>Enoteca Pinchiorri</strong> — Tres estrellas Michelin, 150.000 botellas</li></ul><br>
           <h4>🗺 Visitas Adicionales</h4>
-          <ul class="rec-list">
-            <li>🏛 <strong>Piazzale Michelangelo</strong> — Vista panorámica más icónica de Florencia</li>
-            <li>🎨 <strong>Jardines de Boboli</strong> — Jardines renacentistas del Palacio Pitti</li>
-          </ul>
+          <ul class="rec-list"><li>🏛 <strong>Piazzale Michelangelo</strong> — Vista panorámica más icónica de Florencia</li><li>🎨 <strong>Jardines de Boboli</strong> — Jardines renacentistas del Palacio Pitti</li></ul>
         </div>
         <div class="city-services">
-          <div class="service-block"><h5>🚇 Transporte Público</h5><ul><li>🚊 <strong>Tranvía T1</strong> — Línea Novoli-Careggi, conecta con estación Santa Maria Novella (centro)</li><li>🚌 <strong>Bus ATAF 35/55</strong> — Novoli al centro histórico, 15 min</li><li>🎫 <strong>Billete ATAF</strong> (€1.70) — Válido 90 min en bus y tranvía</li></ul></div>
-          <div class="service-block"><h5>🧺 Lavandería Cercana</h5><ul><li>🧺 <strong>Speed Queen - Via G. Carissimi 21</strong> — Zona Novoli, ~1 km, wifi, parking</li><li>🧺 <strong>Lavanderia Chiara</strong> — Barrio Novoli, servicio completo, www.lavanderiachiara.com</li></ul></div>
+          <div class="service-block"><h5>🚇 Transporte Público</h5><ul><li>🚊 <strong>Tranvía T1</strong> — Novoli–Santa Maria Novella (centro)</li><li>🎫 <strong>Billete ATAF</strong> (€1.70) — Válido 90 min</li></ul></div>
+          <div class="service-block"><h5>🧺 Lavandería Cercana</h5><ul><li>🧺 <strong>Speed Queen - Via G. Carissimi 21</strong> — Zona Novoli, ~1 km</li></ul></div>
         </div>
       </div>
     </div>
@@ -825,14 +609,14 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
     <h2 class="section-title fade-in">Visitas <em>Académicas</em> & Profesionales</h2>
     <div class="divider"></div>
     <div class="academic-grid">
-      <div class="academic-card fade-in"><div class="academic-date">Lun, 11 Mayo</div><div class="academic-city-tag">Roma</div><div class="academic-name">Colegio de la Defensa de la OTAN</div><div class="academic-type-badge badge-academic">Académica</div><p class="academic-desc">El NATO Defense College (NDC), fundado en 1951, es la institución de pensamiento estratégico y liderazgo de la Alianza Atlántica. Forma a oficiales superiores y funcionarios de países aliados y socios en estrategia y seguridad transatlántica.</p><div class="academic-responsible"><strong>Responsable:</strong> FAC ~ MY Gutiérrez Moreno Zad Yomar</div></div>
-      <div class="academic-card fade-in"><div class="academic-date">Mar, 12 Mayo</div><div class="academic-city-tag">Roma</div><div class="academic-name">CESEDEN — Centro Superior de Estudios de Defensa</div><div class="academic-type-badge badge-academic">Académica</div><p class="academic-desc">Principal centro de pensamiento estratégico de las Fuerzas Armadas. Ofrece formación avanzada en seguridad internacional, estrategia y geopolítica a oficiales de alto rango y personal civil especializado en defensa.</p><div class="academic-responsible"><strong>Responsable:</strong> ARC ~ CC Quintero Ibáñez Julián Orlando</div></div>
-      <div class="academic-card fade-in"><div class="academic-date">Mié, 13 Mayo</div><div class="academic-city-tag">Ciudad del Vaticano</div><div class="academic-name">Santa Sede — Audiencia Papal</div><div class="academic-type-badge badge-special">Especial / Protocolar</div><p class="academic-desc">Audiencia Papal en el Vaticano, evento protocolar de máxima importancia institucional. La Santa Sede tiene presencia diplomática en más de 180 países. Un hito histórico en la agenda de la PGI 2026 y experiencia de trascendencia espiritual única.</p><div class="academic-responsible"><strong>Responsable:</strong> EJC ~ MY Carrera Amaya Juan Carlos</div></div>
-      <div class="academic-card fade-in"><div class="academic-date">Jue, 14 Mayo</div><div class="academic-city-tag">Milán</div><div class="academic-name">Empresa LEONARDO — Sección Aeronáutica</div><div class="academic-type-badge badge-industrial">Industrial / Defensa</div><p class="academic-desc">Leonardo S.p.A. es uno de los 10 principales conglomerados mundiales en aeroespacial, defensa y seguridad, con ingresos de más de €14.000 millones. Produce helicópteros militares, aeronaves de combate y sistemas de vigilancia avanzados.</p><div class="academic-responsible"><strong>Responsable:</strong> EJC ~ MY Niño Castillo Edson Alexander</div></div>
-      <div class="academic-card fade-in"><div class="academic-date">Vie, 15 Mayo</div><div class="academic-city-tag">Venecia</div><div class="academic-name">Museo Histórico Naval de Venecia</div><div class="academic-type-badge badge-naval">Naval / Cultural</div><p class="academic-desc">Gestionado por la Marina Militare Italiana, alberga más de 25.000 piezas que documentan la historia naval de la República de Venecia. Colecciones de galeras, armas navales y reliquias del arsenal veneciano, de especial interés para la ARC.</p><div class="academic-responsible"><strong>Responsable:</strong> ARC ~ CC Camacho Álvarez Moisés Francisco</div></div>
-      <div class="academic-card fade-in"><div class="academic-date">Lun, 18 Mayo</div><div class="academic-city-tag">Livorno</div><div class="academic-name">Escuela Naval Italiana — Accademia Navale</div><div class="academic-type-badge badge-naval">Académica / Naval</div><p class="academic-desc">La Accademia Navale di Livorno, fundada en 1881, forma a los futuros comandantes de la flota italiana. Programa de cuatro años que combina ciencias navales, militares e ingeniería. Referencia indispensable para la Armada Nacional de Colombia.</p><div class="academic-responsible"><strong>Responsable:</strong> ARC ~ CC Mesa Ramírez Carlos Andrés</div></div>
-      <div class="academic-card fade-in"><div class="academic-date">Mar, 19 Mayo</div><div class="academic-city-tag">Florencia</div><div class="academic-name">Instituto Geográfico Militar del Ejército Italiano</div><div class="academic-type-badge badge-academic">Académica / Técnica</div><p class="academic-desc">El IGM, fundado en 1872, es el organismo oficial de cartografía de Italia. Produce la cartografía topográfica nacional y coordina el sistema geodésico del país. Sus capacidades en geomática y SIG son de alto valor técnico para los oficiales del CEM.</p><div class="academic-responsible"><strong>Responsable:</strong> FAC ~ MY Beltrán Morales Cristian Alexander</div></div>
-      <div class="academic-card fade-in"><div class="academic-date">Mié, 20 Mayo</div><div class="academic-city-tag">Florencia</div><div class="academic-name">Escuela Militar "Giulio Douhet"</div><div class="academic-type-badge badge-aero">Académica / Aérea</div><p class="academic-desc">La Scuola Militare Aeronautica "Giulio Douhet", en honor al primer teórico moderno del poder aéreo, forma cuadros académicos y culturales de la Aeronautica Militare Italiana. El pensamiento de Douhet continúa influyendo en las fuerzas aéreas del mundo.</p><div class="academic-responsible"><strong>Responsable:</strong> EJC ~ MY Rozo Guzmán Cristhian Andrés</div></div>
+      <div class="academic-card fade-in"><div class="academic-date">Lun, 11 Mayo</div><div class="academic-city-tag">Roma</div><div class="academic-name">Colegio de la Defensa de la OTAN</div><div class="academic-type-badge badge-academic">Académica</div><p class="academic-desc">El NATO Defense College (NDC), fundado en 1951, es la institución de pensamiento estratégico y liderazgo de la Alianza Atlántica. Forma a oficiales superiores de países aliados en estrategia y seguridad transatlántica.</p><div class="academic-responsible"><strong>Responsable:</strong> FAC ~ MY Gutiérrez Moreno Zad Yomar</div></div>
+      <div class="academic-card fade-in"><div class="academic-date">Mar, 12 Mayo</div><div class="academic-city-tag">Roma</div><div class="academic-name">CESEDEN — Centro Superior de Estudios de Defensa</div><div class="academic-type-badge badge-academic">Académica</div><p class="academic-desc">Principal centro de pensamiento estratégico de las Fuerzas Armadas. Ofrece formación avanzada en seguridad internacional, estrategia y geopolítica a oficiales de alto rango.</p><div class="academic-responsible"><strong>Responsable:</strong> ARC ~ CC Quintero Ibáñez Julián Orlando</div></div>
+      <div class="academic-card fade-in"><div class="academic-date">Mié, 13 Mayo</div><div class="academic-city-tag">Ciudad del Vaticano</div><div class="academic-name">Santa Sede — Audiencia Papal</div><div class="academic-type-badge badge-special">Especial / Protocolar</div><p class="academic-desc">Audiencia Papal en el Vaticano, evento protocolar de máxima importancia institucional. La Santa Sede tiene presencia diplomática en más de 180 países. Un hito histórico en la agenda de la PGI 2026.</p><div class="academic-responsible"><strong>Responsable:</strong> EJC ~ MY Carrera Amaya Juan Carlos</div></div>
+      <div class="academic-card fade-in"><div class="academic-date">Jue, 14 Mayo</div><div class="academic-city-tag">Milán</div><div class="academic-name">Empresa LEONARDO — Sección Aeronáutica</div><div class="academic-type-badge badge-industrial">Industrial / Defensa</div><p class="academic-desc">Leonardo S.p.A. es uno de los 10 principales conglomerados mundiales en aeroespacial, defensa y seguridad, con ingresos de más de €14.000 millones. Produce helicópteros militares y aeronaves de combate.</p><div class="academic-responsible"><strong>Responsable:</strong> EJC ~ MY Niño Castillo Edson Alexander</div></div>
+      <div class="academic-card fade-in"><div class="academic-date">Vie, 15 Mayo</div><div class="academic-city-tag">Venecia</div><div class="academic-name">Museo Histórico Naval de Venecia</div><div class="academic-type-badge badge-naval">Naval / Cultural</div><p class="academic-desc">Gestionado por la Marina Militare Italiana, alberga más de 25.000 piezas que documentan la historia naval de la República de Venecia. Colecciones de galeras, armas navales y reliquias del arsenal veneciano.</p><div class="academic-responsible"><strong>Responsable:</strong> ARC ~ CC Camacho Álvarez Moisés Francisco</div></div>
+      <div class="academic-card fade-in"><div class="academic-date">Lun, 18 Mayo</div><div class="academic-city-tag">Livorno</div><div class="academic-name">Escuela Naval Italiana — Accademia Navale</div><div class="academic-type-badge badge-naval">Académica / Naval</div><p class="academic-desc">La Accademia Navale di Livorno, fundada en 1881, forma a los futuros comandantes de la flota italiana en un programa de cuatro años. Referencia indispensable para la Armada Nacional de Colombia.</p><div class="academic-responsible"><strong>Responsable:</strong> ARC ~ CC Mesa Ramírez Carlos Andrés</div></div>
+      <div class="academic-card fade-in"><div class="academic-date">Mar, 19 Mayo</div><div class="academic-city-tag">Florencia</div><div class="academic-name">Instituto Geográfico Militar del Ejército Italiano</div><div class="academic-type-badge badge-academic">Académica / Técnica</div><p class="academic-desc">El IGM, fundado en 1872, es el organismo oficial de cartografía de Italia. Sus capacidades en geomática, cartografía digital y SIG son de alto valor técnico para los oficiales del CEM.</p><div class="academic-responsible"><strong>Responsable:</strong> FAC ~ MY Beltrán Morales Cristian Alexander</div></div>
+      <div class="academic-card fade-in"><div class="academic-date">Mié, 20 Mayo</div><div class="academic-city-tag">Florencia</div><div class="academic-name">Escuela Militar "Giulio Douhet"</div><div class="academic-type-badge badge-aero">Académica / Aérea</div><p class="academic-desc">La Scuola Militare Aeronautica "Giulio Douhet" honra al primer teórico moderno del poder aéreo. Forma cuadros académicos de la Aeronautica Militare Italiana. El pensamiento de Douhet continúa influyendo en las fuerzas aéreas del mundo.</p><div class="academic-responsible"><strong>Responsable:</strong> EJC ~ MY Rozo Guzmán Cristhian Andrés</div></div>
     </div>
   </div>
 </div>
@@ -842,80 +626,35 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
   <div class="security-inner">
     <div class="security-header fade-in">
       <div class="security-icon-big">🛡</div>
-      <div>
-        <p class="section-label">Información Crítica</p>
-        <h2 class="section-title">Aspectos de <em>Seguridad</em> & Recomendaciones</h2>
-      </div>
+      <div><p class="section-label">Información Crítica</p><h2 class="section-title">Aspectos de <em>Seguridad</em> & Recomendaciones</h2></div>
     </div>
     <div class="divider"></div>
-
-    <p style="font-size:0.85rem;color:var(--text);line-height:1.7;margin-bottom:28px;" class="fade-in">Italia es un país seguro en general, pero como en cualquier destino turístico europeo, existen riesgos de <strong style="color:#FF8A8A;">carterismo en zonas muy turísticas y transporte público</strong>. Precaución especial en aglomeraciones. Modalidades comunes: empujones, preguntas insistentes, "ayuda amable", tumultos al subir al tren o bus — alguien crea una distracción mientras otra persona abre mochila, bolso o bolsillo. <strong style="color:var(--gold);">Desplazamientos en grupo, mínimo de tres (03) personas.</strong></p>
-
+    <p style="font-size:0.85rem;color:var(--text);line-height:1.7;margin-bottom:28px;" class="fade-in">Italia es un país seguro en general, pero como en cualquier destino turístico europeo, existen riesgos de <strong style="color:#FF8A8A;">carterismo en zonas muy turísticas y transporte público</strong>. Modalidades comunes: empujones, preguntas insistentes, "ayuda amable", tumultos al subir al tren o bus. <strong style="color:var(--gold);">Desplazamientos en grupo, mínimo de tres (03) personas.</strong></p>
     <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:3px;color:var(--red);margin-bottom:18px;" class="fade-in">⚠ Zonas de Precaución por Ciudad</h3>
     <div class="security-grid fade-in">
-      <div class="security-card">
-        <div class="security-card-city">Roma</div>
-        <div class="security-card-title">Zona Termini</div>
-        <p>Alto riesgo nocturno: estafas, concentración de personas sin hogar y calles poco iluminadas. Evitar paseos nocturnos solos por los alrededores de la estación.</p>
-      </div>
-      <div class="security-card">
-        <div class="security-card-city">Milán</div>
-        <div class="security-card-title">Estación Milano Centrale</div>
-        <p>Carteristas activos especialmente de noche. Vigilar pertenencias al abordar trenes y en los andenes.</p>
-      </div>
-      <div class="security-card">
-        <div class="security-card-city">Venecia</div>
-        <div class="security-card-title">Multitudes Turísticas</div>
-        <p>Carteristas aprovechan las aglomeraciones en los vaporetti, Puente de Rialto y Plaza San Marcos. Mochila siempre al frente.</p>
-      </div>
-      <div class="security-card">
-        <div class="security-card-city">Florencia</div>
-        <div class="security-card-title">Estación Santa Maria Novella</div>
-        <p>Calles muy turísticas con aglomeración propician robos menores. Extremar precaución con mochilas y celulares.</p>
-      </div>
-      <div class="security-card">
-        <div class="security-card-city">Pisa</div>
-        <div class="security-card-title">Estación Pisa Centrale</div>
-        <p>Robos menores típicos de zonas de tránsito. No dejar objetos desatendidos en bancos ni cafés.</p>
-      </div>
-      <div class="security-card">
-        <div class="security-card-city">Livorno</div>
-        <div class="security-card-title">Áreas Industriales</div>
-        <p>Evitar áreas industriales o poco turísticas de noche. Mantenerse en el paseo marítimo, centro y puerto turístico.</p>
-      </div>
+      <div class="security-card"><div class="security-card-city">Roma</div><div class="security-card-title">Zona Termini</div><p>Alto riesgo nocturno: estafas y calles poco iluminadas. Evitar paseos nocturnos solos.</p></div>
+      <div class="security-card"><div class="security-card-city">Milán</div><div class="security-card-title">Estación Milano Centrale</div><p>Carteristas activos especialmente de noche. Vigilar pertenencias al abordar trenes.</p></div>
+      <div class="security-card"><div class="security-card-city">Venecia</div><div class="security-card-title">Multitudes Turísticas</div><p>Carteristas en vaporetti, Puente de Rialto y Plaza San Marcos. Mochila siempre al frente.</p></div>
+      <div class="security-card"><div class="security-card-city">Florencia</div><div class="security-card-title">Estación Santa Maria Novella</div><p>Calles muy turísticas propician robos menores. Extremar precaución con mochilas y celulares.</p></div>
+      <div class="security-card"><div class="security-card-city">Pisa</div><div class="security-card-title">Estación Pisa Centrale</div><p>Robos menores típicos de zonas de tránsito. No dejar objetos desatendidos.</p></div>
+      <div class="security-card"><div class="security-card-city">Livorno</div><div class="security-card-title">Áreas Industriales</div><p>Evitar áreas industriales de noche. Mantenerse en el paseo marítimo y centro turístico.</p></div>
     </div>
-
     <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.2rem;letter-spacing:3px;color:var(--green);margin:28px 0 18px;" class="fade-in">✅ Zonas Recomendadas y Seguras</h3>
     <div class="security-grid fade-in">
-      <div class="security-card" style="border-color:rgba(0,146,70,0.25);">
-        <div class="security-card-city" style="background:rgba(0,146,70,0.15);color:#7EC99A;">Roma</div>
-        <ul><li>Centro Histórico (Coliseo, Foro Romano, Piazza Navona, Via Nazionale)</li><li>Área Trastevere — ambiente vibrante y seguro</li><li>Vaticano y Prati — zona residencial tranquila</li></ul>
-      </div>
-      <div class="security-card" style="border-color:rgba(0,146,70,0.25);">
-        <div class="security-card-city" style="background:rgba(0,146,70,0.15);color:#7EC99A;">Milán</div>
-        <ul><li>Duomo / Centro Histórico — bien vigilado</li><li>Brera — barrio artístico y gastronómico</li><li>Navigli — ambiente nocturno turístico y seguro</li></ul>
-      </div>
-      <div class="security-card" style="border-color:rgba(0,146,70,0.25);">
-        <div class="security-card-city" style="background:rgba(0,146,70,0.15);color:#7EC99A;">Venecia</div>
-        <ul><li>San Marco — zona más vigilada de la ciudad</li><li>Dorsoduro — galerías y universidad, tranquilo</li><li>Cannaregio — auténtico y residencial</li></ul>
-      </div>
-      <div class="security-card" style="border-color:rgba(0,146,70,0.25);">
-        <div class="security-card-city" style="background:rgba(0,146,70,0.15);color:#7EC99A;">Florencia & Pisa & Livorno</div>
-        <ul><li>Florencia: Centro Histórico (Duomo, Uffizi), Oltrarno y Santa Croce</li><li>Pisa: Área de la Torre, Centro Histórico y Borgo Stretto</li><li>Livorno: Terrazza Mascagni, centro y zona costera</li></ul>
-      </div>
+      <div class="security-card" style="border-color:rgba(0,146,70,0.25);"><div class="security-card-city" style="background:rgba(0,146,70,0.15);color:#7EC99A;">Roma</div><ul><li>Centro Histórico (Coliseo, Foro Romano, Piazza Navona)</li><li>Área Trastevere — ambiente vibrante y seguro</li><li>Vaticano y Prati — zona residencial tranquila</li></ul></div>
+      <div class="security-card" style="border-color:rgba(0,146,70,0.25);"><div class="security-card-city" style="background:rgba(0,146,70,0.15);color:#7EC99A;">Milán</div><ul><li>Duomo / Centro Histórico — bien vigilado</li><li>Brera — barrio artístico y gastronómico</li><li>Navigli — ambiente nocturno turístico y seguro</li></ul></div>
+      <div class="security-card" style="border-color:rgba(0,146,70,0.25);"><div class="security-card-city" style="background:rgba(0,146,70,0.15);color:#7EC99A;">Venecia</div><ul><li>San Marco — zona más vigilada de la ciudad</li><li>Dorsoduro — galerías y universidad, tranquilo</li><li>Cannaregio — auténtico y residencial</li></ul></div>
+      <div class="security-card" style="border-color:rgba(0,146,70,0.25);"><div class="security-card-city" style="background:rgba(0,146,70,0.15);color:#7EC99A;">Florencia / Pisa / Livorno</div><ul><li>Florencia: Centro Histórico, Oltrarno y Santa Croce</li><li>Pisa: Área de la Torre, Borgo Stretto</li><li>Livorno: Terrazza Mascagni, centro y zona costera</li></ul></div>
     </div>
-
     <div class="security-tips fade-in">
       <h4>🛡 Recomendaciones Generales de Seguridad Personal</h4>
       <div class="security-tips-grid">
         <div class="security-tip"><div class="security-tip-icon">🎒</div><div>Usar bolso o mochila cerrada <strong>siempre al frente</strong> en zonas de multitudes y transporte público.</div></div>
         <div class="security-tip"><div class="security-tip-icon">📱</div><div>No guardar móvil, billetera ni pasaporte en el bolsillo trasero o externo. Usar riñonera interna.</div></div>
         <div class="security-tip"><div class="security-tip-icon">🚫</div><div>Desconfiar de "ayudas" no solicitadas, peticiones de firmas, pulseras "de regalo" y juegos callejeros.</div></div>
-        <div class="security-tip"><div class="security-tip-icon">🪑</div><div>No dejar nada visible sobre mesas, respaldos de sillas o en el suelo en restaurantes y cafés.</div></div>
         <div class="security-tip"><div class="security-tip-icon">👥</div><div>Desplazamientos siempre en <strong>grupo mínimo de 3 personas</strong>, especialmente de noche.</div></div>
-        <div class="security-tip"><div class="security-tip-icon">🔌</div><div>Adquirir adaptador de enchufe <strong>220-230V / 50Hz</strong> (tipo L/C/F) — Colombia usa 110-120V / 60Hz (tipo A/B).</div></div>
-        <div class="security-tip"><div class="security-tip-icon">💶</div><div>Llevar tarjeta de crédito internacional y efectivo en euros. Adquirir SIM card local (plan 15 días) — opcional.</div></div>
-        <div class="security-tip"><div class="security-tip-icon">📲</div><div>Apps recomendadas: <strong>Google Maps, Rome2Rio</strong> (rutas), <strong>Trenitalia</strong> (trenes), <strong>Moovit</strong> (buses), <strong>TheFork</strong> (restaurantes).</div></div>
+        <div class="security-tip"><div class="security-tip-icon">🔌</div><div>Adquirir adaptador de enchufe <strong>220–230V / 50Hz</strong> (tipo L/C/F) — Colombia usa 110–120V / 60Hz.</div></div>
+        <div class="security-tip"><div class="security-tip-icon">📲</div><div>Apps recomendadas: <strong>Google Maps, Rome2Rio</strong> (rutas), <strong>Trenitalia</strong> (trenes), <strong>Moovit</strong> (buses).</div></div>
       </div>
     </div>
   </div>
@@ -932,7 +671,7 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
       <div class="logistics-card"><div class="logistics-icon">🏢</div><div class="logistics-label">Operador Logístico</div><div class="logistics-value">Travel Access</div><div class="logistics-detail">Néstor Bohórquez<br>(+57) 316 521 1777<br>www.travelaccess.com.co</div></div>
       <div class="logistics-card"><div class="logistics-icon">🏥</div><div class="logistics-label">Seguro Médico</div><div class="logistics-value">Assist Card</div><div class="logistics-detail">USD $30 por persona · Cobertura hasta USD $40.000. Portar siempre el carné.</div></div>
       <div class="logistics-card"><div class="logistics-icon">🚌</div><div class="logistics-label">Transporte</div><div class="logistics-value">Bus Terrestre</div><div class="logistics-detail">Roma → Milán → Venecia → Pisa → Livorno → Florencia</div></div>
-      <div class="logistics-card"><div class="logistics-icon">📋</div><div class="logistics-label">Documentación</div><div class="logistics-value">Obligatoria</div><div class="logistics-detail">Pasaporte vigente (mín. 6 meses) · Seguro · Órdenes de comisión</div></div>
+      <div class="logistics-card"><div class="logistics-icon">📋</div><div class="logistics-label">Documentación</div><div class="logistics-value">Obligatoria</div><div class="logistics-detail">Pasaporte vigente (mín. 6 meses) · Visa Schengen · Seguro · Órdenes de comisión</div></div>
       <div class="logistics-card"><div class="logistics-icon">👔</div><div class="logistics-label">Vestuario</div><div class="logistics-value">Clima Cálido</div><div class="logistics-detail">EJC: No. 3C · ARC: No. 6B · FAC: No. 4. Chaquetilla para clima frío.</div></div>
     </div>
   </div>
@@ -956,7 +695,6 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
   </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-logo">PGI · CEM · 2026</div>
   <p class="footer-text">Práctica Geoestratégica Internacional — Ruta 11 — República Italiana</p>
@@ -966,9 +704,7 @@ footer{background:var(--dark);border-top:1px solid rgba(201,168,76,0.2);padding:
 </footer>
 
 <script>
-// ── CAROUSEL ENGINE ──
 const carData = {};
-
 function initCarousel(id) {
   const el = document.getElementById('car-' + id);
   if (!el) return;
@@ -976,7 +712,6 @@ function initCarousel(id) {
   carData[id] = { cur: 0, total, el, timer: null };
   updateCar(id);
   startAutoPlay(id);
-  // Touch support
   let startX = 0;
   el.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive:true});
   el.addEventListener('touchend', e => {
@@ -984,48 +719,32 @@ function initCarousel(id) {
     if (Math.abs(dx) > 50) carMove(id, dx < 0 ? 1 : -1);
   }, {passive:true});
 }
-
 function updateCar(id) {
   const d = carData[id];
-  const track = d.el.querySelector('.ctrack');
-  track.style.transform = `translateX(-${d.cur * 100}%)`;
+  d.el.querySelector('.ctrack').style.transform = `translateX(-${d.cur * 100}%)`;
   d.el.querySelectorAll('.cdot').forEach((dot, i) => {
     dot.classList.toggle('active', i === d.cur);
     dot.onclick = () => { d.cur = i; updateCar(id); restartAutoPlay(id); };
   });
 }
-
 function carMove(id, dir) {
   const d = carData[id];
   d.cur = (d.cur + dir + d.total) % d.total;
   updateCar(id);
   restartAutoPlay(id);
 }
-
-function startAutoPlay(id) {
-  const d = carData[id];
-  d.timer = setInterval(() => carMove(id, 1), 3800);
-}
-
-function restartAutoPlay(id) {
-  const d = carData[id];
-  clearInterval(d.timer);
-  startAutoPlay(id);
-}
-
-// ── INIT ALL CAROUSELS ──
+function startAutoPlay(id) { carData[id].timer = setInterval(() => carMove(id, 1), 3800); }
+function restartAutoPlay(id) { clearInterval(carData[id].timer); startAutoPlay(id); }
 ['roma','milan','venice','pisa','livorno','florence'].forEach(initCarousel);
 
-// ── FADE IN OBSERVER ──
+// FADE IN
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
 }, {threshold: 0.1});
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-// ── STAGGER ACADEMIC CARDS ──
 document.querySelectorAll('.academic-card').forEach((c, i) => c.style.transitionDelay = `${i * 0.06}s`);
 
-// ── NAV SCROLL HIGHLIGHT ──
+// NAV HIGHLIGHT
 const navLinks = document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll', () => {
   let cur = '';
@@ -1033,28 +752,20 @@ window.addEventListener('scroll', () => {
   navLinks.forEach(a => { a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--gold)' : ''; });
 });
 
-// ── COUNTDOWN TIMER ──
+// COUNTDOWN
 function updateCountdown() {
   const target = new Date('2026-05-10T06:00:00-05:00').getTime();
-  const now = Date.now();
-  const diff = target - now;
-  if (diff <= 0) {
-    document.getElementById('countdown').innerHTML = '<p style="color:var(--gold);font-family:Bebas Neue,sans-serif;font-size:1.6rem;letter-spacing:4px;">¡LA MISIÓN HA COMENZADO!</p>';
-    return;
-  }
-  const d = Math.floor(diff / 86400000);
-  const h = Math.floor((diff % 86400000) / 3600000);
-  const m = Math.floor((diff % 3600000) / 60000);
-  const s = Math.floor((diff % 60000) / 1000);
-  document.getElementById('cd-days').textContent = String(d).padStart(2, '0');
-  document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
-  document.getElementById('cd-mins').textContent = String(m).padStart(2, '0');
-  document.getElementById('cd-secs').textContent = String(s).padStart(2, '0');
+  const diff = target - Date.now();
+  if (diff <= 0) { document.getElementById('countdown').innerHTML = '<p style="color:var(--gold);font-family:Bebas Neue,sans-serif;font-size:1.6rem;letter-spacing:4px;">¡LA MISIÓN HA COMENZADO!</p>'; return; }
+  document.getElementById('cd-days').textContent = String(Math.floor(diff/86400000)).padStart(2,'0');
+  document.getElementById('cd-hours').textContent = String(Math.floor((diff%86400000)/3600000)).padStart(2,'0');
+  document.getElementById('cd-mins').textContent = String(Math.floor((diff%3600000)/60000)).padStart(2,'0');
+  document.getElementById('cd-secs').textContent = String(Math.floor((diff%60000)/1000)).padStart(2,'0');
 }
 updateCountdown();
 setInterval(updateCountdown, 1000);
 
-// ── HAMBURGER MENU ──
+// HAMBURGER
 const menuToggle = document.getElementById('menuToggle');
 const navLinksEl = document.querySelector('.nav-links');
 menuToggle.addEventListener('click', () => {
@@ -1063,21 +774,8 @@ menuToggle.addEventListener('click', () => {
   document.body.style.overflow = navLinksEl.classList.contains('open') ? 'hidden' : '';
 });
 navLinksEl.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    menuToggle.classList.remove('active');
-    navLinksEl.classList.remove('open');
-    document.body.style.overflow = '';
-  });
+  a.addEventListener('click', () => { menuToggle.classList.remove('active'); navLinksEl.classList.remove('open'); document.body.style.overflow = ''; });
 });
-
-// ── PARALLAX HERO ──
-const heroBg = document.querySelector('.hero-bg::before') ? null : document.querySelector('.hero-bg');
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  if (scrollY < window.innerHeight && heroBg) {
-    heroBg.style.transform = `translateY(${scrollY * 0.15}px)`;
-  }
-}, {passive: true});
 </script>
 </body>
 </html>
